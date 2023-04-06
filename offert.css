@@ -1,0 +1,129 @@
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+html::-webkit-scrollbar{
+    width: 1rem;
+}
+
+html::-webkit-scrollbar-track{
+    background-color: white;
+}
+
+html::-webkit-scrollbar-thumb{
+    background-color: rgb(150, 35, 150);
+}
+
+section{
+    padding: 5rem 10%;
+}
+
+@keyframes fadeIn{
+    0%{
+        transform: scale(0);
+        opacity: 0;
+
+    }
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    color: black;
+}
+
+.content-BOX{
+
+    display: flex;
+    height: 85%;
+    align-items: center;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+}
+
+h2{
+
+    font-size: 115px;
+}
+
+p{
+    font-size: 20px;
+    line-height: 20px;
+
+}
+
+.columan-BOX{
+
+    flex-basis: 50%;
+
+}
+
+button{
+
+    width: 165px;
+    color: black;
+    font-size: 20px;
+    padding: 12px 0px;
+    margin-top: 30px;
+    border: 1px solid wheat;
+    border-radius: 20px;
+}
+
+button:hover{
+
+    background-color: rgba(101, 105, 101, 0.822);
+    color: blueviolet;
+}
+
+.car1 .logo a{
+    font-size: 2.3rem;
+    color: black;
+}
+
+.cars{
+
+    width: 200px;
+    height: 210px;
+    display:  inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.cars h1{
+
+    background-size: rgba(233, 228, 218, 0.068);
+}
+
+.car1{
+
+    background-image: url(images/So-Paris-Hotel.jpg);
+
+}
+.car2{
+
+    background-image: url(images/SO.jpg);
+}
+.car3{
+
+    background-image: url(images/COMPANY.png);
+
+}
+.car4{
+
+    background-image: url(images/line.jpg);
+}
+
+.cars:hover{
+
+    transform: translateY(-12px);
+    transition: 0.8s;
+}
