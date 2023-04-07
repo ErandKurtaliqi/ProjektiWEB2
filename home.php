@@ -229,7 +229,7 @@
                 <h3>Contact Info</h3>
                 <a href = "#"><i class = "fas fa-phone"></i>+383 49 889 778</a>
                 <a href = "#"><i class = "fas fa-phone"></i>+383 44 889 778</a>
-                <a href = "contact.php"><i class = "fas fa-envelope"></i>erand.kurtaliqi@student.uni-pr.edu</a>
+                <a href = "contact.php"><i class = "fas fa-envelope"></i>teamtravel@gmail.com</a>
                 <a href = "location.php"><i class = "fas fa-map"></i>Prishtine - Kosove</a>
             </div> 
 
