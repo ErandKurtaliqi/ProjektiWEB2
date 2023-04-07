@@ -39,8 +39,14 @@
         <div class="contact-info">
           <h3 class="title">Let's get in touch</h3>
           <p class="text">
-            Lorem ......................
-          </p>
+          If you prefer to send us an email or call us to communicate, please provide us with your
+           email address or phone number, and we will be happy to follow up with you. 
+           If you prefer a personal meeting, please let us know a convenient time and place for you, and we
+           will make efforts to arrange a meeting to discuss the topic of your interest.
+           We thank you in advance for your interest and look forward to hearing from you.
+            Please let me know if you are ready to start the conversation and how you prefer to communicate.</p>
+            <p>Warmest regards,</p>
+           <p>Team Travel</p>
 
           <div class="info">
             <div class="information">
@@ -49,7 +55,7 @@
             </div>
             <div class="information">
               <img src="img/email.png" class="icon" alt="" />
-              <p>doubleE@gmail.com</p>
+              <p>teamtravel@gmail.com</p>
             </div>
             <div class="information">
               <img src="img/phone.png" class="icon" alt="" />
@@ -134,7 +140,7 @@
                 <h3>Contact Info</h3>
                 <a href = "#"><i class = "fas fa-phone"></i>+383 49 889 778</a>
                 <a href = "#"><i class = "fas fa-phone"></i>+383 49 889 778</a>
-                <a href = "contact.php"><i class = "fas fa-envelope"></i>erand.kurtaliqi@student.uni-pr.edu</a>
+                <a href = "contact.php"><i class = "fas fa-envelope"></i>teamtravel@gmail.com</a>
                 <a href = "location.php"><i class = "fas fa-map"></i>Prishtine - Kosove</a>
             </div> 
 
