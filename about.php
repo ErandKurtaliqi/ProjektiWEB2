@@ -112,7 +112,7 @@
                      I have had a satisfying experience. The website was user-friendly and offered a wide
                       range of tickets for different destinations. The ticket purchasing process was simple
                        and fast, allowing me to select the date easily.</p>
-                <h3>John Deo</h3>
+                <h3>Olivia Garcia</h3>
                 <span>traveler</span>
                 <img src="images/client1.jpg" alt="">
             </div>
@@ -127,7 +127,7 @@
                 <p>What I liked was the protection of my data and security during the online ticket purchasing 
                     process. This fact made me feel satisfied that I could complete my purchase with 
                     confidence and without concerns about the security of my personal data. Thank you, Team Travel!</p>
-                <h3>John Deo</h3>
+                <h3>Liam Logan</h3>
                 <span>traveler</span>
                 <img src="images/client2.jpg" alt="">
             </div>
@@ -144,7 +144,7 @@
                     purchases. The process was easy, secure, and with responsive customer service. 
                     I would recommend this website to those who want to buy travel tickets online with
                      ease and confidence.</p>
-                <h3>John Deo</h3>
+                <h3>James Mason</h3>
                 <span>traveler</span>
                 <img src="images/client3.jpg" alt="">
             </div>
@@ -161,7 +161,7 @@
                     of the travel conditions before making the purchase. In addition, the team of this website
                      was very responsible and helpful. Their responses were prompt and detailed in addressing
                       my questions.</p>
-                <h3>John Deo</h3>
+                <h3>Sophia Smith</h3>
                 <span>traveler</span>
                 <img src="images/client4.jfif" alt="">
             </div>
@@ -178,9 +178,25 @@
                     helping me make a sensible and economical choice for my travel. I highly recommend this 
                     website for those who want to purchase travel tickets online with careful consideration 
                     of the economic aspect.</p>
-                <h3>John Deo</h3>
+                <h3>William Jackson</h3>
                 <span>traveler</span>
                 <img src="images/client5.jpg" alt="">
+            </div>
+
+            <div class="swiper-slide">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>I found this website exceptional in terms of security. The information was well protected,
+                     and the ticket purchasing process was secure and safeguarded. The website's team was 
+                     responsible and took care to protect customers' personal data. Thank you, Team Travel!</p>
+                <h3>Isabella Miller</h3>
+                <span>traveler</span>
+                <img src="images/client6.jpg" alt="">
             </div>
 
         </div>
