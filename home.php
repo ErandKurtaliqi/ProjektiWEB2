@@ -39,7 +39,7 @@
                 <div class="swiper-slide" style="background:url(images/womense.jpg) no-repeat;">
                     <div class="content">
                         <span>explore, discover, travel</span>
-                        <h3>travel arround the world</h3>
+                        <h3>travel around the world</h3>
                         <a href="pageage.php" class="btn">Discover more</a>
                     </div>
                 </div>
@@ -126,9 +126,13 @@
 
     <div class="content">
         <h3>about us</h3>
-        <p>We offer travels in the best destinations in world. In offert are included ticket for travel, 
-            hotel where is center people, hotel is ALL INCLUSIVE and your wait is passion for we. 
-        </p>
+        <p>"Experience your adventure with just one click! Buying tickets online has never been easier and 
+            faster. Get ready for your upcoming journey by visiting our website and booking your travel
+             tickets in a fast and secure way. Our online tickets offer the opportunity to choose your desired
+              destination and date, giving you the complete satisfaction of organizing your trip according to
+               your preferences. Take advantage of special offers and competitive prices, and get ready to 
+               live an unforgettable adventure. Book your tickets online now and be part of your
+                dream journey!"</p>
         <a href="about.php" class="btn">read more</a>
     </div>
 </section>
@@ -146,7 +150,9 @@
             </div>
             <div class="content">
                 <h3>Tokyo & JAPAN</h3>
-                <p>See city attractions like Meiji Shrine and the Imperial Palace, or discover Tokyo neighborhoods, depending on your interests. </p>
+                <p>In Tokyo, you can visit ancient temples such as Senso-ji and Meiji Shrine, explore
+                     the old town of Edo in Asakusa. Japanese Cuisine: In Tokyo, you can try delicious 
+                     Japanese cuisine, including fresh sushi, authentic ramen, tempura, and much more.</p>
                 <a href="book_form.php" class="btn">Book now</a>
             </div>
         </div>
@@ -170,7 +176,10 @@
             </div>
             <div class="content">
                 <h3>Berlin & GERMANY</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+                <p>Visit the historic buildings of the Berlin Wall and Checkpoint Charlie, enjoy the green 
+                    parks like Tiergarten, and explore the revitalized areas such as Potsdamer Platz. 
+                    Experience the German cuisine in Berlin, a fusion of regional cuisines, and create 
+                    unforgettable memories.</p>
                 <a href="book_form.php" class="btn">Book now</a>
             </div>
         </div>
@@ -187,7 +196,7 @@
 <section class="home-offer">
     <div class="content">
         <h3>upto 50% off</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p>Don't miss out on this opportunity: Buy with 50% off for a limited time only!</p>
         <a href="book_form.php" class="btn">Book now</a>
     </div>
 </section>
@@ -234,7 +243,7 @@
             </div>
          </div>
 
-         <div class = "credit">Created by <span>mr. web designer</span> | all rights reserved!|</div>
+         <div class = "credit">Created by <span>Team For Travel</span> | all rights reserved!|</div>
     </section>
 
     <!-- footer section ends -->
