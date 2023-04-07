@@ -198,7 +198,7 @@
                 <span>traveler</span>
                 <img src="images/client6.jpg" alt="">
             </div>
-
+            
         </div>
     </div>
 </section>
