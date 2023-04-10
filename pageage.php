@@ -333,7 +333,7 @@
                 <h3>Contact Info</h3>
                 <a href = "#"><i class = "fas fa-phone"></i>+383 49 889 778</a>
                 <a href = "#"><i class = "fas fa-phone"></i>+383 49 889 778</a>
-                <a href = "contact.php"><i class = "fas fa-envelope"></i>teamtravel@gmail.com</a>
+                <a href = "contact.php"><i class = "fas fa-envelope"></i>maxtravel@gmail.com</a>
                 <a href = "location.php"><i class = "fas fa-map"></i>Prishtine - Kosove</a>
             </div> 
 
@@ -347,7 +347,7 @@
             </div>
          </div>
 
-         <div class = "credit">Created by <span>mr. web designer</span> | all rights reserved!|</div>
+         <div class = "credit">Created by <span>max travel</span> | all rights reserved! |</div>
     </section>
 
     <!-- footer section ends -->

@@ -41,7 +41,7 @@ body{
                 <h2>OFFER</h2>
                 <p style="color: black;"><b>The offer includes the plane ticket, hotel, transportation from the hotel to the plane, the hotel is ALL INCLUSIVE and the return ticket.</b></p>
                 <!-- <button type="button">BOOK THIS</button> -->
-                <a href="book.php" class="btn">BOOK THIS</a>
+                <a href="book_form.php" class="btn">BOOK THIS</a>
             </div>
             <div class="columan-BOX">
                 <div class="cars car1">

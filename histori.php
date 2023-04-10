@@ -29,12 +29,12 @@
 </head>
 <body>
 	<h1>Historia ime</h1>
-	<form>
+	<form action="histori-php.php">
 		<label>Username:</label>
 		<input type="text" id="uname"><br>
 		<label>Password:</label>
 		<input type="password" id="password">
-		<button id="submit-btn" value="Shiko historine" >Shiko Historine</button>
+		<button type="submit" id="submit-btn" value="Shiko historine" >Shiko Historine</button>
 	</form>
 	<div id="history"></div>
 </body>
