@@ -34,7 +34,6 @@
 <div class = "heading" style = "background:url(images/for.jpg) no-repeat">
     <h1>About Us</h1>
 </div>
-
 <!-- about section starts -->
 
 <section class="about">
