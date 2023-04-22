@@ -97,7 +97,10 @@ FROM
     JOIN booking ON orders.id_booking = booking.id_booking
     JOIN hotels ON orders.id_hotels = hotels.id_hotels
     JOIN countries ON orders.id_countries = countries.id_countries
-    JOIN company_fly ON orders.id_company_fly = company_fly.id_company_fly";
+    JOIN company_fly ON orders.id_company_fly = company_fly.id_company_fly
+WHERE 
+     booking.id_booking = orders.id_booking";
+
 
 	$result = mysqli_query($conn, $sql);
 
