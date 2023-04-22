@@ -196,7 +196,6 @@
         
         
         <button type="submit">BOOK</button>
-        <a href="pay.php">Pay</a>
         <button onclick="window.print()">Print</button>
 
     </form>
