@@ -18,6 +18,7 @@
 
      	<button type="submit">Login</button>
           <a href="signup.php" class="ca">Create an account</a>
+		  <a href="controlPage.php" class="ca">Admin</a>
      </form>
 </body>
 </html>
