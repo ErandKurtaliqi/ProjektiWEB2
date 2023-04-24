@@ -11,11 +11,7 @@
         <div class="container">
             
             <h1>Navigate Through the Map</h1>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1689.
-            0237661401889!2d21.148101885072126!3d42.
-            66034903791809!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.
-            1!3m3!1m2!1s0x13549f4aa50beba3%3A0xf6211164861a21c5!2sDent%20Fix%20Ks!5e0!3m2!1sen!2s!4v1674212991242!5m2!1sen!2s" width="600" height="450" 
-            style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2934.3464135734016!2d21.14996271142656!3d42.654013971046766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13549ef1ef771c55%3A0x15b6cbc0e0939485!2sMax%20Travel!5e0!3m2!1sen!2s!4v1682369718733!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
 
   <!-- footer section start -->
