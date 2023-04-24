@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>Historia ime</title>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	<script>
 		$(document).ready(function(){
 			$("#submit-btn").click(function(e){
@@ -26,15 +26,16 @@
 			});
 		});
 	</script>
-</head>
+</head> -->
 <body>
 	<h1>Historia ime</h1>
-	<form action="histori-php.php">
+	<form action="histori-php.php" method="post">
 		<label>Username:</label>
-		<input type="text" id="uname"><br>
+		<input type="text" id="uname" name="username"><br>
 		<label>Password:</label>
-		<input type="password" id="password">
-		<button type="submit" id="submit-btn" value="Shiko historine" >Shiko Historine</button>
+		<input type="password" id="password" name="password">
+		<!-- <button type="submit" id="submit-btn" value="Shiko historine" >Shiko Historine</button> -->
+		<button type="submit">Shiko historine</button>
 	</form>
 	<div id="history"></div>
 </body>

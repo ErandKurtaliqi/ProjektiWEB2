@@ -6,20 +6,60 @@ if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
 
+if (isset($_POST['username']) && isset($_POST['password'])) {
+
+	function validate($data){
+       $data = trim($data);
+	   $data = stripslashes($data);
+	   $data = htmlspecialchars($data);
+	   return $data;
+	}
+
+	$username = validate($_POST['username']);
+	$password = validate($_POST['password']);
+
+	
+	if (empty($username)) {
+		echo "Usename is required";
+	    exit();
+	}else if(empty($password)){
+        echo "Password is required";
+	    exit();
+	}else{
+		
+		$sql2 = "SELECT * FROM user_reg WHERE username_user_reg='$username' AND password='$password'";
+
+		$result = mysqli_query($conn, $sql2);
+
+		if (mysqli_num_rows($result) === 1) {
+			$row = mysqli_fetch_assoc($result);
+            if ($row['username_user_reg'] === $username && $row['password'] === $password) {
+            	$_SESSION['username_user_reg'] = $row['username_user_reg'];
+            	$_SESSION['name_user_reg'] = $row['name_user_reg'];
+            	$_SESSION['id_user_reg'] = $row['id_user_reg'];
+            }else{
+				echo "Incorect username or password";
+			}
+		}else{
+			echo ".";
+		}
+	}
+}
+
 $sql = "SELECT * FROM orders 
         INNER JOIN booking ON orders.id_booking = booking.id_booking
         INNER JOIN user_reg ON orders.id_user_reg = user_reg.id_user_reg
         INNER JOIN countries ON orders.id_countries = countries.id_countries
         INNER JOIN hotels ON hotels.id_hotels = countries.id_hotels
-        INNER JOIN company_fly ON company_fly.id_company_fly = countries.id_company_fly";
-
-
+        INNER JOIN company_fly ON company_fly.id_company_fly = countries.id_company_fly
+		WHERE '$username' = orders.user_name";
+        
 $result = mysqli_query($conn, $sql);
-
 
 if (mysqli_num_rows($result) > 0) {
   
-	echo "<table border = 1><tr><th>ID</th>
+	echo "<table border = 1>
+	<tr><th>ID</th>
 	<th>Booking ID</th>
 	<th>User ID</th>
 	<th>Country ID</th>
