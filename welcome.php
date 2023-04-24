@@ -15,6 +15,7 @@ if (isset($_SESSION['id_user_reg']) && isset($_SESSION['username_user_reg'])) {
      <nav class="home-nav">
      <a href="change-password-u.php">Change Password</a>
      <a href="logout.php">Logout</a>
+     <a href="histori.php">See your history</a>
      </nav>
 </body>
 </html>
