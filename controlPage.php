@@ -35,7 +35,7 @@
                   <div class="signup-link">
                   </div>
                </form>
-               <form action="controlPage-php.php" class="signup" name="forma2">
+               <form action="controlPage-php.php" method="post" class="signup" name="forma2">
                   <div class="field">
                      <input type="text" placeholder="Email Address" name="user" required>
                   </div>
