@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Add Orders</title>
 </head>
 <body>
+
 <form action="addOrders-php.php" method="post"><br><br>
 <label for="id_orders">Shto id e orders</label><br>
     <input type="number" placeholder="id_orders" id="id_orders" name="id_orders"><br><br>
@@ -22,8 +24,19 @@
     <input type="number" placeholder="id_company_fly" id="id_company_fly" name="id_company_fly"><br><br>
     <label for="user_name">Shto user_name</label><br>
     <input type="text" placeholder="user_name" id="user_name" name="user_name"><br><br>
-    <button type="submit">Add</button><br><br>
+    <button type="submit" class="btn">Add</button><br><br>
 </form>
+
+<button type="button" onclick="document.getElementById('tabela1').style.display='block'" class="btn"
+>Booking Table</button>
+<button type="button" onclick="document.getElementById('tabela2').style.display='block'" class="btn"
+>Orders Table</button>
+<button type="button" onclick="document.getElementById('tabela3').style.display='block'" class="btn"
+>Hotels Table</button>
+<button type="button" onclick="document.getElementById('tabela4').style.display='block'">Countries Table</button>
+<button type="button" onclick="document.getElementById('tabela5').style.display='block'">User Table</button>
+<button type="button" onclick="document.getElementById('tabela6').style.display='block'">Company_Fly Table</button>
+
 <?php
 
 $conn = mysqli_connect("localhost", "root", "", "travel");
@@ -43,7 +56,7 @@ $result = mysqli_query($conn, $sql);
 
 if (mysqli_num_rows($result) > 0) {
 
-echo "<table border = 1>
+echo "<table border = 1 id='tabela1' style='display: none;'>
 <tr><th>Id_Booking</th>
 <th>Name</th>
 <th>Email</th>
@@ -69,13 +82,13 @@ echo "</table>";
 echo "Nuk u gjet asnje rezultat.";
 }
 
-echo "<br><br>";
+echo "<br>";
 
 $result = mysqli_query($conn, $sql2);
 
 if (mysqli_num_rows($result) > 0) {
 
-echo "<table border = 1>
+echo "<table border = 1 id='tabela2' style='display: none;'>
 <tr><th>Id_Ordres</th>
 <th>Id_Booking</th>
 <th>Id_user_reg</th>
@@ -97,13 +110,13 @@ echo "</table>";
 echo "Nuk u gjet asnje rezultat.";
 }
 
-echo "<br><br>";
+echo "<br>";
 
 $result = mysqli_query($conn, $sql3);
 
 if (mysqli_num_rows($result) > 0) {
 
-echo "<table border = 1>
+echo "<table border = 1 id='tabela3' style='display: none;'>
 <tr><th>Id_Hotels</th>
 <th>Name_Hotels</th>
 <th>Offer</th>
@@ -121,14 +134,14 @@ echo "</table>";
 echo "Nuk u gjet asnje rezultat.";
 }
 
-echo "<br><br>";
+echo "<br>";
 
 
 $result = mysqli_query($conn, $sql4);
 
 if (mysqli_num_rows($result) > 0) {
 
-echo "<table border = 1>
+echo "<table border = 1 id='tabela4' style='display: none;'>
 <tr><th>Id_Countries</th>
 <th>Name_Countries</th>
 <th>Price_Countries</th>
@@ -146,13 +159,13 @@ echo "</table>";
 echo "Nuk u gjet asnje rezultat.";
 }
 
-echo "<br><br>";
+echo "<br>";
 
 $result = mysqli_query($conn, $sql5);
 
 if (mysqli_num_rows($result) > 0) {
 
-echo "<table border = 1>
+echo "<table border = 1 id='tabela5' style='display: none;'>
 <tr><th>Id_User</th>
 <th>Name_User</th>
 <th>Username</th>
@@ -168,13 +181,13 @@ echo "</table>";
 echo "Nuk u gjet asnje rezultat.";
 }
 
-echo "<br><br>";
+echo "<br>";
 
 $result = mysqli_query($conn, $sql6);
 
 if (mysqli_num_rows($result) > 0) {
 
-echo "<table border = 1>
+echo "<table border = 1 id='tabela6' style='display: none;'>
 <tr><th>Id_Company_Fly</th>
 <th>Name_Company_Fly</th>
 <th>Destination</th>
