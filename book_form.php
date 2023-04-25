@@ -112,7 +112,7 @@
                       placeholder="Phone">
         <?php }?>
 
-        <<label>Address</label>
+        <label>Address</label>
         <select  class="io"
                  name="address" 
                  id="address"

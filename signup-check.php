@@ -59,6 +59,7 @@ if (isset($_POST['uname']) && isset($_POST['password'])
            $result2 = mysqli_query($conn, $sql2);
            if ($result2) {
            	 header("Location: signup.php?success=Your account has been created successfully");
+				header("Location: login.php");
 	         exit();
            }else {
 	           	header("Location: signup.php?error=unknown error occurred&$user_data");
