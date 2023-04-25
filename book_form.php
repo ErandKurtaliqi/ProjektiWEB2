@@ -51,8 +51,17 @@
     </section>
     <!-- header section ends -->
 
-<div class = "heading" style = "background:url(images/paris.jpg) no-repeat">
-    <h1>Book Now</h1>
+<div class = "heading" style = "background:url(images/snow.jpg)">
+    <h1 style="color: black;">TRAVEL WITH US!</h1>
+    <style>
+        h1 {
+            opacity: 0.8;   
+        }
+
+        .heading {
+            opacity: 0.8;
+        }
+    </style>
 </div>
 
 <!--booking section starts-->
@@ -61,7 +70,12 @@
 
     <!-- <h1 class="heading-title">book your trip!</h1> -->
     <form action="book_form_php.php" method="post" class="book-forma" autocomplete="on">
-     	<h2>Book Now</h2>
+     	<h2>You can book here!</h2>
+        <style>
+            h2 {
+                color: black;
+            }
+        </style>
      	<?php if (isset($_GET['error'])) { ?>
      		<p class="error"><?php echo $_GET['error']; ?></p>
      	<?php } ?>
@@ -70,7 +84,7 @@
                <p class="success"><?php echo $_GET['success']; ?></p>
           <?php } ?>
           <span class="element">
-          <label>Name</label>
+          <!-- <label>Name</label> -->
           <?php if (isset($_GET['names'])) { ?>
                <input type="text" 
                       name="names"
@@ -84,7 +98,7 @@
                       placeholder="Name">
           <?php }?>
 
-          <label>Email</label>
+          <!-- <label>Email</label> -->
           <?php if (isset($_GET['email'])) { ?>
                <input type="email" 
                       name="email" 
@@ -98,7 +112,7 @@
           <?php }?>
 
 
-     	<label>Phone</label>
+     	<!-- <label>Phone</label> -->
         <?php if (isset($_GET['phone'])) { ?>
      	<input type="number" 
                  name="phone" 
@@ -112,7 +126,7 @@
                       placeholder="Phone">
         <?php }?>
 
-        <label>Address</label>
+        <!-- <label>Address</label> -->
         <select  class="io"
                  name="address" 
                  id="address"
@@ -156,7 +170,7 @@
                 <option>Parteshi</option>
         </select>
 
-        <label>Location</label>
+        <!-- <label>Location</label> -->
         <select  class="io"
                  name="location" 
                  id="location"
@@ -181,7 +195,7 @@
                         <option>Beijing & CHINA</option>
         </select>
 
-        <label>Guests</label>
+        <!-- <label>Guests</label> -->
         <?php if (isset($_GET['guests'])) { ?>
      	<input type="number" 
                  name="guests" 
@@ -195,7 +209,7 @@
                       placeholder="Guests">
         <?php }?>
 
-        <label>Arrivals</label>
+        <!-- <label>Arrivals</label> -->
         <?php if (isset($_GET['arrivals'])) { ?>
      	<input type="date" 
                  name="arrivals" 
@@ -209,7 +223,7 @@
                       placeholder="Arrivals">
         <?php }?>
 
-        <label>Leaving</label>
+        <!-- <label>Leaving</label> -->
         <?php if (isset($_GET['leaving'])) { ?>
      	<input type="date" 
                  name="leaving" 
