@@ -117,7 +117,6 @@
                  name="address" 
                  id="address"
                 >
-<<<<<<< HEAD
                 <option>Prishtinë</option>
                 <option>Mitrovicë</option>
                 <option>Pejë</option>
