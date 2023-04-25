@@ -59,10 +59,6 @@ $result = mysqli_query($conn, $sql);
 if (mysqli_num_rows($result) > 0) {
   
 	echo "<table border = 1>
-	<tr><th>ID</th>
-	<th>Booking ID</th>
-	<th>User ID</th>
-	<th>Country ID</th>
 	<th>Name</th>
 	<th>Email</th>
 	<th>Phone</th>
@@ -76,10 +72,7 @@ if (mysqli_num_rows($result) > 0) {
 	<th>Name user</th>
 	<th>Price</th>";
     while($row = mysqli_fetch_assoc($result)) {
-        echo "<tr><td>" . $row["id_orders"] . "</td>
-		<td>".$row["id_booking"]."</td>
-		<td>".$row["id_user_reg"]."</td>
-		<td>".$row["id_countries"]."</td>
+        echo "<tr>
 		<td>".$row["names"]."</td>
 		<td>".$row["email"]."</td>
 		<td>".$row["phone"]."</td>
