@@ -87,10 +87,8 @@ if (isset($_POST['names']) && isset($_POST['email'])
 	}
 
 // 		$sql = "SELECT 
-//     booking.guests, 
-//     hotels.price_hotel, 
+//     booking.guests,  
 //     countries.price_countries, 
-//     company_fly.price_fly,
 //     (countries.price_countries * booking.guests) AS total_price
 // FROM 
 //     orders 

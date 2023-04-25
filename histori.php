@@ -34,7 +34,6 @@
 		<input type="text" id="uname" name="username"><br>
 		<label>Password:</label>
 		<input type="password" id="password" name="password">
-		<!-- <button type="submit" id="submit-btn" value="Shiko historine" >Shiko Historine</button> -->
 		<button type="submit">Shiko historine</button>
 	</form>
 	<div id="history"></div>
