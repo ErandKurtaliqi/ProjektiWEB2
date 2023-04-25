@@ -46,7 +46,7 @@
             </div>
             <div class="content">
             <h3>Paris & FRANCE</h3>
-                    <p style="text-transform: uppercase;"><strong>800$</strong></p>
+                    <p><strong> <b>800$</b></strong></p>
                     <p style="text-decoration: line-through;">1000$</p>
                     <div class="price" style="font-size: larger;"><b>7 DAYS</b></div>
                 <a href="offert.php" class="btn">See more</a>
@@ -60,7 +60,7 @@
             </div>
             <div class="content">
                 <h3>New-York & USA</h3>
-                <p>3200$</p>
+                <p><strong><b>3200$</b></strong></p>
                     <p style="text-decoration: line-through;">3550$</p>
                     <div class="price" style="font-size: larger;"><b>7 DAYS</b></div>
                 <a href="offert.php" class="btn">See more</a>
@@ -74,7 +74,7 @@
             </div>
             <div class="content">
                 <h3>Rome & ITALY</h3>
-                <p> <b>600$</b> </p>
+                <p><strong><b>600$</b></strong></p>
                     <p style="text-decoration: line-through;">860$</p>
                     <div class="price" style="font-size: larger;"><b>7 DAYS</b></div>
                 <a href="offert.php" class="btn">See more</a>
@@ -88,7 +88,7 @@
             </div>
             <div class="content">
                 <h3>London & UK</h3>
-                <p style="text-transform: uppercase;">500$</p>
+                <p><strong><b>500$</b></strong></p>
                     <p style="text-decoration: line-through;">750$</p>
                     <div class="price" style="font-size: larger;"><b>7 DAYS</b></div>
                 <a href="offert.php" class="btn">See more</a>
@@ -102,7 +102,7 @@
             </div>
             <div class="content">
                 <h3>Tokyo & JAPAN</h3>
-                <p style="text-transform: uppercase;">1280$</p>
+                <p><strong><b>1280$</b></strong></p>
                     <p style="text-decoration: line-through;">1650$</p>
                     <div class="price" style="font-size: larger;"><b>7 DAYS</b></div>
                 <a href="offert.php" class="btn">See more</a>
@@ -116,7 +116,7 @@
             </div>
             <div class="content">
                 <h3>Lisbon & PORTUGAL</h3>
-                <p style="text-transform: uppercase;">1000$</p>
+                <p><strong><b>900$</b></strong></p>
                     <p style="text-decoration: line-through;">1250$</p>
                     <div class="price" style="font-size: larger;"><b>7 DAYS</b></div>
                 <a href="offert.php" class="btn">See more</a>
@@ -130,7 +130,7 @@
             </div>
             <div class="content">
                 <h3>Barcelona & SPAIN</h3>
-                <p style="text-transform: uppercase;">1000$</p>
+                <p><strong><b>1000$</b></strong></p>
                     <p style="text-decoration: line-through;">1500$</p>
                     <div class="price" style="font-size: larger;"><b>7 DAYS</b></div>
                 <a href="offert.php" class="btn">See more</a>
@@ -144,7 +144,7 @@
             </div>
             <div class="content">
                 <h3>Honolulu & HAWAII</h3>
-                <p style="text-transform: uppercase;">2200$</p>
+                <p><strong><b>2200$</b></strong></p>
                     <p style="text-decoration: line-through;">2950$</p>
                     <div class="price" style="font-size: larger;"><b>7 DAYS</b></div>
                 <a href="offert.php" class="btn">See more</a>
@@ -158,7 +158,7 @@
             </div>
             <div class="content">
                 <h3>Istanbul & TURKEY</h3>
-                <p style="text-transform: uppercase;">400$</p>
+                <p><strong><b>400$</b></strong></p>
                     <p style="text-decoration: line-through;">550$</p>
                     <div class="price" style="font-size: larger;"><b>7 DAYS</b></div>
                 <a href="offert.php" class="btn">See more</a>
@@ -172,7 +172,7 @@
             </div>
             <div class="content">
                 <h3>Berlin & GERMANY</h3>
-                <p style="text-transform: uppercase;">600$</p>
+                <p><strong><b>600$</b></strong></p>
                     <p style="text-decoration: line-through;"> 850$</p>
                     <div class="price" style="font-size: larger;"><b>7 DAYS</b></div>
                 <a href="offert.php" class="btn">See more</a>
@@ -186,7 +186,7 @@
             </div>
             <div class="content">
                 <h3>Cairo & EGYPT</h3>
-                <p style="text-transform: uppercase;">1200$</p>
+                <p><strong><b>1200$</b></strong></p>
                     <p style="text-decoration: line-through;">1750$</p>
                     <div class="price" style="font-size: larger;"><b>7 DAYS</b></div>
                 <a href="offert.php" class="btn">See more</a>
@@ -199,7 +199,7 @@
             </div>
             <div class="content">
                 <h3>Agra & INDIA</h3>
-                <p style="text-transform: uppercase;">1350$</p>
+                <p><strong><b>1350$</b></strong></p>
                     <p style="text-decoration: line-through;">1850$</p>
                     <div class="price" style="font-size: larger;"><b>7 DAYS</b></div>
                 <a href="offert.php" class="btn">See more</a>
@@ -212,7 +212,7 @@
             </div>
             <div class="content">
                 <h3>Venice & ITALY</h3>
-                <p style="text-transform: uppercase;">670$</p>
+                <p><strong><b>670$</b></strong></p>
                     <p style="text-decoration: line-through;">780$</p>
                     <div class="price" style="font-size: larger;"><b>7 DAYS</b></div>
                 <a href="offert.php" class="btn">See more</a>
@@ -225,7 +225,7 @@
             </div>
             <div class="content">
                 <h3>Singapore & SINGAPORE</h3>
-                <p style="text-transform: uppercase;">1600$</p>
+                <p><strong><b>1600$</b></strong></p>
                     <p style="text-decoration: line-through;">1800$</p>
                     <div class="price" style="font-size: larger;"><b>7 DAYS</b></div>
                 <a href="offert.php" class="btn">See more</a>
@@ -238,7 +238,7 @@
             </div>
             <div class="content">
                 <h3>Toronto & CANADA</h3>
-                <p style="text-transform: uppercase;">4500$</p>
+                <p><strong><b>4500$</b></strong></p>
                     <p style="text-decoration: line-through;">5500$</p>
                     <div class="price" style="font-size: larger;"><b>7 DAYS</b></div>
                 <a href="offert.php" class="btn">See more</a>
@@ -251,7 +251,7 @@
             </div>
             <div class="content">
                 <h3>Sydney & AUSTRALIA</h3>
-                <p style="text-transform: uppercase;">4500$</p>
+                <p><strong><b>4500$</b></strong></p>
                     <p style="text-decoration: line-through;">5120$</p>
                     <div class="price" style="font-size: larger;"><b>7 DAYS</b></div>
                 <a href="offert.php" class="btn">See more</a>
@@ -264,7 +264,7 @@
             </div>
             <div class="content">
                 <h3>Lima & PERU</h3>
-                <p style="text-transform: uppercase;">1500$</p>
+                <p><strong><b>1500$</b></strong></p>
                     <p style="text-decoration: line-through;">2250$</p>
                     <div class="price" style="font-size: larger;"><b>7 DAYS</b></div>
                 <a href="offert.php" class="btn">See more</a>
@@ -277,7 +277,7 @@
             </div>
             <div class="content">
                 <h3>Beijing & CHINA</h3>
-                <p style="text-transform: uppercase;">2200$</p>
+                <p><strong><b>2200$</b></strong></p>
                     <p style="text-decoration: line-through;">2950$</p>
                     <div class="price" style="font-size: larger;"><b>7 DAYS</b></div>
                 <a href="offert.php" class="btn">See more</a>
