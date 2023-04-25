@@ -117,13 +117,45 @@
                  name="address" 
                  id="address"
                 >
-                <option>Prishtine</option>
-                <option>Mitrovic</option>
-                <option>Peja</option>
+                <option>Prishtinë</option>
+                <option>Mitrovicë</option>
+                <option>Pejë</option>
                 <option>Prizeren</option>
                 <option>Ferizaj</option>
                 <option>Gjilan</option>
-                <option>Gjakove</option>
+                <option>Gjakovë</option>
+                <option>Podujevë</option>
+                <option>Vushtrri</option>
+                <option>Suharekë</option>
+                <option>Rahovecë</option>
+                <option>Drenas</option>
+                <option>Lipjan</option>
+                <option>Malishevë</option>
+                <option>Kamenicë</option>
+                <option>Viti</option>
+                <option>Deçan</option>
+                <option>Istog</option>
+                <option>Klinë</option>
+                <option>Skenderaj</option>
+                <option>Dragash</option>
+                <option>Fushë Kosovë</option>
+                <option>Kaçanik</option>
+                <option>Shtime</option>
+                <option>Obiliq</option>
+                <option>Leposaviq</option>
+                <option>Graçanicë</option>
+                <option>Han i Elezit</option>
+                <option>Zveqan</option>
+                <option>Shtërpcë</option>
+                <option>Novobërdë</option>
+                <option>Zubin Potok</option>
+                <option>Junik</option>
+                <option>Mamusha</option>
+                <option>Ranillug</option>
+                <option>Kllokoti</option>
+                <option>Parteshi</option>
+
+
         </select>
 
         <label>Location</label>
