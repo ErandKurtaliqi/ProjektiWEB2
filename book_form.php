@@ -121,12 +121,6 @@
                 <option>Prishtinë</option>
                 <option>Mitrovicë</option>
                 <option>Pejë</option>
-=======
-                <option>Shtime</option>
-                <option>Prishtine</option>
-                <option>Mitrovic</option>
-                <option>Peja</option>
->>>>>>> 7558e0f16076c1898bb2476740d5802ee9fd4a0f
                 <option>Prizeren</option>
                 <option>Ferizaj</option>
                 <option>Gjilan</option>
@@ -161,8 +155,6 @@
                 <option>Ranillug</option>
                 <option>Kllokoti</option>
                 <option>Parteshi</option>
-
-
         </select>
 
         <label>Location</label>

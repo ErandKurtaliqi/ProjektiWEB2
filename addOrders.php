@@ -120,6 +120,77 @@ echo "</table>";
 } else {
 echo "Nuk u gjet asnje rezultat.";
 }
+
+echo "<br><br>";
+
+
+$result = mysqli_query($conn, $sql4);
+
+if (mysqli_num_rows($result) > 0) {
+
+echo "<table border = 1>
+<tr><th>Id_Countries</th>
+<th>Name_Countries</th>
+<th>Price_Countries</th>
+<th>Id_Company_Fly</th>
+<th>Id_Hotels</th>";
+while($row = mysqli_fetch_assoc($result)) {
+echo "<tr><td>" . $row["id_countries"] . "</td>
+<td>".$row["name_countries"]."</td>
+<td>".$row["price_countries"]."</td>
+<td>".$row["id_company_fly"]."</td>
+<td>".$row["id_hotels"]."</td>";
+}
+echo "</table>";
+} else {
+echo "Nuk u gjet asnje rezultat.";
+}
+
+echo "<br><br>";
+
+$result = mysqli_query($conn, $sql5);
+
+if (mysqli_num_rows($result) > 0) {
+
+echo "<table border = 1>
+<tr><th>Id_User</th>
+<th>Name_User</th>
+<th>Username</th>
+<th>Password</th>";
+while($row = mysqli_fetch_assoc($result)) {
+echo "<tr><td>" . $row["id_user_reg"] . "</td>
+<td>".$row["name_user_reg"]."</td>
+<td>".$row["username_user_reg"]."</td>
+<td>".$row["password"]."</td>";
+}
+echo "</table>";
+} else {
+echo "Nuk u gjet asnje rezultat.";
+}
+
+echo "<br><br>";
+
+$result = mysqli_query($conn, $sql6);
+
+if (mysqli_num_rows($result) > 0) {
+
+echo "<table border = 1>
+<tr><th>Id_Company_Fly</th>
+<th>Name_Company_Fly</th>
+<th>Destination</th>
+<th>Contract</th>
+<th>Price_Fly</th>";
+while($row = mysqli_fetch_assoc($result)) {
+echo "<tr><td>" . $row["id_company_fly"] . "</td>
+<td>".$row["name_company_fly"]."</td>
+<td>".$row["destination"]."</td>
+<td>".$row["contract"]."</td>
+<td>".$row["price_fly"]."</td>";
+}
+echo "</table>";
+} else {
+echo "Nuk u gjet asnje rezultat.";
+}
 ?>
 </body>
 </html>
