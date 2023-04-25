@@ -142,7 +142,7 @@
 <!-- home package section starts -->
 
 <section class="home-packages">
-    <h1 class="heading-title">our packages</h1>
+    <h1 class="heading-title">New Packages</h1>
     <div class="box-container">
         <div class="box">
             <div class="image">
@@ -150,10 +150,11 @@
             </div>
             <div class="content">
                 <h3>Tokyo & JAPAN</h3>
-                <p>In Tokyo, you can visit ancient temples such as Senso-ji and Meiji Shrine, explore
-                     the old town of Edo in Asakusa. Japanese Cuisine: In Tokyo, you can try delicious 
-                     Japanese cuisine, including fresh sushi, authentic ramen, tempura, and much more.</p>
-                <a href="book_form.php" class="btn">Book now</a>
+                <p style="text-transform: uppercase;">OFFER: 1280$</p>
+                    <p>Ticket: 1650$</p>
+                    <div class="price" style="font-size: larger;"><b>7 DAYS</b></div>
+                <a href="offert.php" class="btn">See more</a>
+                <a href="book_form.php" class="btn">book now</a>
             </div>
         </div>
 
@@ -163,10 +164,11 @@
             </div>
             <div class="content">
                 <h3>Honolulu & HAWAII</h3>
-                <p>The Honolulu Museum of Art is Hawaiis largest fine arts museum. You can also tour 
-                    Shangri-La, the stunning cliffside home of heiress Doris Duke, which now houses a notable 
-                    collection of Islamic Art. If you book now you win ticket for museum free. </p>
-                <a href="book_form.php" class="btn">Book now</a>
+                <p style="text-transform: uppercase;">OFFER: 2200$</p>
+                    <p>Ticket: 2950$</p>
+                    <div class="price" style="font-size: larger;"><b>7 DAYS</b></div>
+                <a href="offert.php" class="btn">See more</a>
+                <a href="book_form.php" class="btn">book now</a>
             </div>
         </div>
 
@@ -176,12 +178,13 @@
             </div>
             <div class="content">
                 <h3>Berlin & GERMANY</h3>
-                <p>Visit the historic buildings of the Berlin Wall and Checkpoint Charlie, enjoy the green 
-                    parks like Tiergarten, and explore the revitalized areas such as Potsdamer Platz. 
-                    Experience the German cuisine in Berlin, a fusion of regional cuisines, and create 
-                    unforgettable memories.</p>
-                <a href="book_form.php" class="btn">Book now</a>
+                <p style="text-transform: uppercase;">OFFER: 600$</p>
+                    <p>Ticket: 850$</p>
+                    <div class="price" style="font-size: larger;"><b>7 DAYS</b></div>
+                <a href="offert.php" class="btn">See more</a>
+                <a href="book_form.php" class="btn">book now</a>
             </div>
+        </div>
         </div>
 
     </div>
