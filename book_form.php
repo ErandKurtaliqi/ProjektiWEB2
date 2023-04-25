@@ -112,14 +112,21 @@
                       placeholder="Phone">
         <?php }?>
 
-        <<label>Address</label>
+        <label>Address</label>
         <select  class="io"
                  name="address" 
                  id="address"
                 >
+<<<<<<< HEAD
                 <option>Prishtinë</option>
                 <option>Mitrovicë</option>
                 <option>Pejë</option>
+=======
+                <option>Shtime</option>
+                <option>Prishtine</option>
+                <option>Mitrovic</option>
+                <option>Peja</option>
+>>>>>>> 7558e0f16076c1898bb2476740d5802ee9fd4a0f
                 <option>Prizeren</option>
                 <option>Ferizaj</option>
                 <option>Gjilan</option>

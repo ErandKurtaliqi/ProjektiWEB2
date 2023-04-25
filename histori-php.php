@@ -41,7 +41,7 @@ if (isset($_POST['username']) && isset($_POST['password'])) {
 				echo "Incorect username or password";
 			}
 		}else{
-			echo ".";
+			echo "";
 		}
 	}
 }
