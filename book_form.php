@@ -112,19 +112,19 @@
                       placeholder="Phone">
         <?php }?>
 
-        <label>Address</label>
-        <?php if (isset($_GET['address'])) { ?>
-     	<input type="text" 
+        <<label>Address</label>
+        <select  class="io"
                  name="address" 
                  id="address"
-                 placeholder="Address"
-                 value="<?php echo $_GET['address']; ?>">
-        <?php }else{ ?>
-               <input type="text" 
-                      name="address"
-                      id="address" 
-                      placeholder="Address">
-        <?php }?>
+                >
+                <option>Prishtine</option>
+                <option>Mitrovic</option>
+                <option>Peja</option>
+                <option>Prizeren</option>
+                <option>Ferizaj</option>
+                <option>Gjilan</option>
+                <option>Gjakove</option>
+        </select>
 
         <label>Location</label>
         <select  class="io"

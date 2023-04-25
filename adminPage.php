@@ -33,8 +33,8 @@
     <h1>ADMIN</h1>
 </div>
 <!-- about section starts -->
-<a href="book_form.php" class="btn">Add orders</a>
-<a href="book_form.php" class="btn">Add booking</a>
+<a href="addOrders.php" class="btn">Add orders</a>
+<a href="book_form.php" class="btn">Booking</a>
 <!-- about section ends -->
 
 <!-- reviews section starts -->

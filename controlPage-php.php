@@ -33,7 +33,7 @@ if (isset($_POST['user']) && isset($_POST['pass1'])) {
             	$_SESSION['username'] = $row['username'];
             	$_SESSION['password'] = $row['password'];
             	$_SESSION['id_employees'] = $row['id_employees'];
-            	header("Location: home.php");
+            	header("Location: adminPage.php");
 		        exit();
             }else{
 				echo "<script>alert('Incorect User name or password'); </script>";
