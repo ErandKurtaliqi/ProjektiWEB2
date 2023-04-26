@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+html,body{
+  display:auto;
+  height: 100%;
+  width: 100%;
+  place-items: center;
+  background:  #a445b2;
+}
+
+#signup:checked ~ label.login{
+  color: #000;
+}
+#login:checked ~ label.login{
+  cursor: default;
+  user-select: none;
+}
+
+.btn {
+    display: inline;
+    background: black;
+    margin-top: 1px;
+    color: white;
+    font-size: 1rem;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background: rgb(127, 34, 127);
+  }
+
+  .form-inner form .field input{
+    height: 70%;
+    width: 30%;
+    outline: none;
+    padding-left: 15px;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+    border-bottom-width: 2px;
+    font-size: 17px;
+    transition: all 0.3s ease;
+  }
+
+  .form-inner form .field{
+    height: 50px;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .form-container .form-inner form{
+    width: 50%;
+    transition: all 0.6s cubic-bezier(0.68,-0.55,0.265,1.55);
+  }
+
+  .form-container .form-inner{
+    display: flex;
+    width: 200%;
+  }
+
+  .form-inner form .field input:focus{
+    border-color: #fc83bb;
+    /* box-shadow: inset 0 0 3px #fb6aae; */
+  }
+  .form-inner form .field input::placeholder{
+    color: #999;
+    transition: all 0.3s ease;
+  }
+
+  form .field input:focus::placeholder{
+    color: #b3b3b3;
+  }
+  .form-inner form .pass-link{
+    margin-top: 5px;
+  }

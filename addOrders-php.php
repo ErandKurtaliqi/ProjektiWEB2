@@ -28,25 +28,25 @@ if (isset($_POST['id_orders']) && isset($_POST['id_booking'])
 
 	
 	if (empty($id_orders)) {
-		echo "Usename is required";
+		echo "Id_Orders is required";
 	    exit();
 	}else if(empty($id_booking)){
-        echo "Password is required";
+        echo "Id_Booking is required";
 	    exit();
 	}else if(empty($id_user_reg)){
-        echo "Password is required";
+        echo "Id_User_Reg is required";
 	    exit();
 	}else if(empty($id_countries)){
-        echo "Password is required";
+        echo "Id_Countries is required";
 	    exit();
 	}else if(empty($id_hotels)){
-        echo "Password is required";
+        echo "Id_Hotels is required";
 	    exit();
 	}else if(empty($id_company_fly)){
-        echo "Password is required";
+        echo "Id_Company_Fly is required";
 	    exit();
 	}else if(empty($user_name)){
-        echo "Password is required";
+        echo "User_name is required";
 	    exit();
 	}else{
 		
