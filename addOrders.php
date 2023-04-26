@@ -51,8 +51,8 @@
 <button type="button" onclick="document.getElementById('tabela6').style.display='block'" class="btn"
 >Company_Fly Table</button>
 
-<script>
-function removeRow(id) {
+<!-- <script>
+function removeRow(id_booking) {
   if (confirm("A jeni të sigurt që dëshironi të fshini këtë rresht?")) {
     // Krijo një kërkesë AJAX për të fshirë rreshtin nga tabela
     var xhttp = new XMLHttpRequest();
@@ -66,7 +66,7 @@ xhttp.open("GET", "delete_row.php?id=" + id, true);
 xhttp.send();
   }
 }
-</script>
+</script> -->
 <?php
 
 $conn = mysqli_connect("localhost", "root", "", "travel");
@@ -75,6 +75,10 @@ if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
 
+if(isset($_POST["id_booking"])){
+  $id = $_POST["id_booking"];
+  $delete = mysqli_query($conn, "DELETE FROM booking WHERE id_booking = '$id'");
+}
 $sql = "SELECT * FROM booking";
 $sql2 = "SELECT * FROM orders";
 $sql3 = "SELECT * FROM hotels";
@@ -97,7 +101,7 @@ echo "<table border = 1 id='tabela1' style='display: none;' class='table_respons
 <th>Arrivals</th>
 <th>Leaving</th>";
 while($row = mysqli_fetch_assoc($result)) {
-echo "<tr><td>" . $row["id_booking"] . "</td>
+echo "<tr><td>".$row["id_booking"]."</td>
 <td>".$row["names"]."</td>
 <td>".$row["email"]."</td>
 <td>".$row["phone"]."</td>
@@ -109,7 +113,7 @@ echo "<tr><td>" . $row["id_booking"] . "</td>
 <td>
 <span id='6' class='action_btn'>
 <button type='button' onclick='removeRow(" . $row["id_booking"] . ")'>Remove</button>
-<button type='button' onclick='myFunction6()'>Remove</a>
+<a href='addOrders.php?id_booking='.$row[id_booking].'' id = 'click' >Delete</a>
 </span>
 </td>";
 }
