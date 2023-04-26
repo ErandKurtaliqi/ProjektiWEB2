@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="addOrders.css">
+    <link rel="stylesheet" href="table.css">
     <title>Add Orders</title>
 </head>
 <body>
@@ -50,6 +51,22 @@
 <button type="button" onclick="document.getElementById('tabela6').style.display='block'" class="btn"
 >Company_Fly Table</button>
 
+<script>
+function removeRow(id) {
+  if (confirm("A jeni të sigurt që dëshironi të fshini këtë rresht?")) {
+    // Krijo një kërkesë AJAX për të fshirë rreshtin nga tabela
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        var row = document.getElementById(id);
+    row.parentNode.removeChild(row);
+  }
+};
+xhttp.open("GET", "delete_row.php?id=" + id, true);
+xhttp.send();
+  }
+}
+</script>
 <?php
 
 $conn = mysqli_connect("localhost", "root", "", "travel");
@@ -69,7 +86,7 @@ $result = mysqli_query($conn, $sql);
 
 if (mysqli_num_rows($result) > 0) {
 
-echo "<table border = 1 id='tabela1' style='display: none;'>
+echo "<table border = 1 id='tabela1' style='display: none;' class='table_responsive'>
 <tr><th>Id_Booking</th>
 <th>Name</th>
 <th>Email</th>
@@ -88,7 +105,13 @@ echo "<tr><td>" . $row["id_booking"] . "</td>
 <td>".$row["location"]."</td>
 <td>".$row["guests"]."</td>
 <td>".$row["arrivals"]."</td>
-<td>".$row["leaving"]."</td>";
+<td>".$row["leaving"]."</td>
+<td>
+<span id='6' class='action_btn'>
+<button type='button' onclick='removeRow(" . $row["id_booking"] . ")'>Remove</button>
+<button type='button' onclick='myFunction6()'>Remove</a>
+</span>
+</td>";
 }
 echo "</table>";
 } else {
@@ -101,7 +124,7 @@ $result = mysqli_query($conn, $sql2);
 
 if (mysqli_num_rows($result) > 0) {
 
-echo "<table border = 1 id='tabela2' style='display: none;'>
+echo "<table border = 1 id='tabela2' style='display: none;' class='table_responsive'>
 <tr><th>Id_Ordres</th>
 <th>Id_Booking</th>
 <th>Id_user_reg</th>
@@ -116,7 +139,13 @@ echo "<tr><td>" . $row["id_orders"] . "</td>
 <td>".$row["id_countries"]."</td>
 <td>".$row["id_hotels"]."</td>
 <td>".$row["id_company_fly"]."</td>
-<td>".$row["user_name"]."</td>";
+<td>".$row["user_name"]."</td>
+<td>
+<span id='6' class='action_btn'>
+<a href='#'>Edit</a>
+<button type='button' onclick='myFunction6()'>Remove</a>
+</span>
+</td>";
 }
 echo "</table>";
 } else {
@@ -129,7 +158,7 @@ $result = mysqli_query($conn, $sql3);
 
 if (mysqli_num_rows($result) > 0) {
 
-echo "<table border = 1 id='tabela3' style='display: none;'>
+echo "<table border = 1 id='tabela3' style='display: none;' class='table_responsive'>
 <tr><th>Id_Hotels</th>
 <th>Name_Hotels</th>
 <th>Offer</th>
@@ -140,7 +169,13 @@ echo "<tr><td>" . $row["id_hotels"] . "</td>
 <td>".$row["name_hotels"]."</td>
 <td>".$row["offer"]."</td>
 <td>".$row["price_hotel"]."</td>
-<td>".$row["codCity"]."</td>";
+<td>".$row["codCity"]."</td>
+<td>
+<span id='6' class='action_btn'>
+<a href='#'>Edit</a>
+<button type='button' onclick='myFunction6()'>Remove</a>
+</span>
+</td>";
 }
 echo "</table>";
 } else {
@@ -154,7 +189,7 @@ $result = mysqli_query($conn, $sql4);
 
 if (mysqli_num_rows($result) > 0) {
 
-echo "<table border = 1 id='tabela4' style='display: none;'>
+echo "<table border = 1 id='tabela4' style='display: none;' class='table_responsive'>
 <tr><th>Id_Countries</th>
 <th>Name_Countries</th>
 <th>Price_Countries</th>
@@ -165,7 +200,13 @@ echo "<tr><td>" . $row["id_countries"] . "</td>
 <td>".$row["name_countries"]."</td>
 <td>".$row["price_countries"]."</td>
 <td>".$row["id_company_fly"]."</td>
-<td>".$row["id_hotels"]."</td>";
+<td>".$row["id_hotels"]."</td>
+<td>
+<span id='6' class='action_btn'>
+<a href='#'>Edit</a>
+<button type='button' onclick='myFunction6()'>Remove</a>
+</span>
+</td>";
 }
 echo "</table>";
 } else {
@@ -178,7 +219,7 @@ $result = mysqli_query($conn, $sql5);
 
 if (mysqli_num_rows($result) > 0) {
 
-echo "<table border = 1 id='tabela5' style='display: none;'>
+echo "<table border = 1 id='tabela5' style='display: none;' class='table_responsive'>
 <tr><th>Id_User</th>
 <th>Name_User</th>
 <th>Username</th>
@@ -187,7 +228,13 @@ while($row = mysqli_fetch_assoc($result)) {
 echo "<tr><td>" . $row["id_user_reg"] . "</td>
 <td>".$row["name_user_reg"]."</td>
 <td>".$row["username_user_reg"]."</td>
-<td>".$row["password"]."</td>";
+<td>".$row["password"]."</td>
+<td>
+<span id='6' class='action_btn'>
+<a href='#'>Edit</a>
+<button type='button' onclick='myFunction6()'>Remove</a>
+</span>
+</td>";
 }
 echo "</table>";
 } else {
@@ -200,7 +247,7 @@ $result = mysqli_query($conn, $sql6);
 
 if (mysqli_num_rows($result) > 0) {
 
-echo "<table border = 1 id='tabela6' style='display: none;'>
+echo "<table border = 1 id='tabela6' style='display: none;' class='table_responsive'>
 <tr><th>Id_Company_Fly</th>
 <th>Name_Company_Fly</th>
 <th>Destination</th>
@@ -211,7 +258,13 @@ echo "<tr><td>" . $row["id_company_fly"] . "</td>
 <td>".$row["name_company_fly"]."</td>
 <td>".$row["destination"]."</td>
 <td>".$row["contract"]."</td>
-<td>".$row["price_fly"]."</td>";
+<td>".$row["price_fly"]."</td>
+<td>
+<span id='6' class='action_btn'>
+<a href='#'>Edit</a>
+<button type='button' onclick='myFunction6()'>Remove</a>
+</span>
+</td>";
 }
 echo "</table>";
 } else {
