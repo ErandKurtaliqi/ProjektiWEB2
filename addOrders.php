@@ -75,16 +75,22 @@ if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
 
-if(isset($_POST["id_booking"])){
-  $id = $_POST["id_booking"];
-  $delete = mysqli_query($conn, "DELETE FROM booking WHERE id_booking = '$id'");
-}
 $sql = "SELECT * FROM booking";
 $sql2 = "SELECT * FROM orders";
 $sql3 = "SELECT * FROM hotels";
 $sql4 = "SELECT * FROM countries";
 $sql5 = "SELECT * FROM user_reg";
 $sql6 = "SELECT * FROM company_fly";
+
+$id = 3;
+
+$delete = mysqli_query($conn, "DELETE FROM booking WHERE id_booking = '$id'");
+if ($delete) {
+    echo "Rreshti është fshirë me sukses.";
+} else {
+    echo "Gabim gjatë fshirjes së rreshtit.";
+}
+
 
 $result = mysqli_query($conn, $sql);
 
@@ -112,8 +118,7 @@ echo "<tr><td>".$row["id_booking"]."</td>
 <td>".$row["leaving"]."</td>
 <td>
 <span id='6' class='action_btn'>
-<button type='button' onclick='removeRow(" . $row["id_booking"] . ")'>Remove</button>
-<a href='addOrders.php?id_booking='.$row[id_booking].'' id = 'click' >Delete</a>
+<a href='?id_booking=".$row['id_booking']."' class='delete_btn' onclick='return confirm(\"A jeni i sigurt që dëshironi të fshini rreshtin?\")'>Delete</a>
 </span>
 </td>";
 }
