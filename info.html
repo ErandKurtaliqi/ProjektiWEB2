@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Titulli i faqes</title>
+	<style>
+        html{
+            font-size: 62.5%;
+            overflow-x: hidden;
+        }
+        
+        html::-webkit-scrollbar{
+            width: 1rem;
+        }
+        
+        html::-webkit-scrollbar-track{
+            background-color: white;
+        }
+        
+        html::-webkit-scrollbar-thumb{
+            background-color: rgb(150, 35, 150);
+        }
+        
+        .container {
+            width: 700px;
+            height: 600px;
+            margin: auto;
+            padding: 20px;
+            background: linear-gradient(to bottom, #f2f2f2, #fff);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            border-radius: 5px;
+        }
+        
+        button {
+            background-color: #8e44ad;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+        button:hover {
+            background-color: black;
+            color: #fff;
+        }
+        
+        button:active {
+            background-color: #8e44ad;
+            box-shadow: 0 5px black;
+            transform: translateY(4px);
+        }
+        
+        p{
+            font-size: 1.5rem;
+        }
+        
+        .form {
+            width: 700px;
+            height: 600px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .checkbox {
+            width: 20px;
+            height: 20px;
+            border: 1px solid #ccc;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+	</style>
+</head>
+<body>
+    <div class="container">
+        <div class="form">
+            <h3>Sigurohuni që të keni kohën e nevojshme për të plotësuar të gjitha fushat e kërkuara në formën e blerjes së biletës.</h3>
+            <div class="checkbox" id="checkbox1"></div>
+            <h3>Kontrolloni vërejtjet e veta për çdo lloj gabimi ose gabimi nën procesin e blerjes. Ju lutemi, sigurohuni që të jeni të sigurt për datat e saktë të udhëtimit, destinacionin, si dhe emrin dhe mbiemrin e udhëtarëve.</h3>
+            <div class="checkbox" id="checkbox2"></div>
+            <h3>Për të vazhduar me procesin e blerjes së biletës, ju lutemi, konfirmoni se keni lexuar dhe pajtoheni me kushtet dhe rregulloret tona.</h3>
+            <div class="checkbox" id="checkbox3"></div>
+            <button id="submitBtn">Confirm</button>
+        </div>
+    </div>
+    
+    <script>
+
+const element = document.querySelector('#checkbox1');
+element.addEventListener('click', () => {
+  const style = document.createElement('style');
+  style.innerHTML = '#checkbox1 {background-color: #8e44ad;}';
+  document.head.appendChild(style);
+});
+
+const element2 = document.querySelector('#checkbox2');
+element2.addEventListener('click', () => {
+  const style = document.createElement('style');
+  style.innerHTML = '#checkbox2 {background-color: #8e44ad;}';
+  document.head.appendChild(style);
+});
+
+const element3 = document.querySelector('#checkbox3');
+element3.addEventListener('click', () => {
+  const style = document.createElement('style');
+  style.innerHTML = '#checkbox3 {background-color: #8e44ad;}';
+  document.head.appendChild(style);
+});
+
+        const checkbox1 = document.getElementById('checkbox1');
+        const checkbox2 = document.getElementById('checkbox2');
+const checkbox3 = document.getElementById('checkbox3');
+const submitBtn = document.getElementById('submitBtn');
+
+let checked1 = false;
+    let checked2 = false;
+    let checked3 = false;
+    
+    checkbox1.addEventListener('click', () => {
+    checked1 = !checked1;
+    checkbox1.classList.toggle('checked');
+    });
+    
+    checkbox2.addEventListener('click', () => {
+    checked2 = !checked2;
+    checkbox2.classList.toggle('checked');
+    });
+    
+    checkbox3.addEventListener('click', () => {
+    checked3 = !checked3;
+    checkbox3.classList.toggle('checked');
+    });
+    
+    submitBtn.addEventListener('click', () => {
+    if (checked1 && checked2 && checked3) {
+    alert('Blerja e biletes u krye me sukses!');
+    } else {
+    alert('Ju lutemi konfirmoni te gjitha kushtet!');
+    }
+    });
+    </script>
+
