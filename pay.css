@@ -65,3 +65,12 @@ input[type="submit"]:hover {
 input[type="submit"]:active {
     background-color: #0062cc;
 }
+
+.form-image {
+	display: flex;
+	justify-content: space-between;
+ }
+ 
+ .form-image img {
+	width: 30%;
+ }

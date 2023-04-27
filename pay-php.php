@@ -2,9 +2,8 @@
 if(isset($_POST['submit'])) {
   $name = $_POST['name'];
   $email = $_POST['email'];
-  $cardNumber = $_POST['cardNumber'];
-  $expMonth = $_POST['expMonth'];
-  $expYear = $_POST['expYear'];
+  $cardNumber = $_POST['card'];
+  $expMonth = $_POST['expiry'];
   $cvv = $_POST['cvv'];
   
 

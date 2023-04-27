@@ -10,7 +10,7 @@
 <body>
     <div class="container">
         <h2>Online Payment Form</h2>
-        <form method="post" action="payment.php">
+        <form method="post" action="pay-php.php">
             <div class="form-control">
                 <label for="name">Full Name</label>
                 <input type="text" name="name" id="name" required>
@@ -42,6 +42,11 @@
             <div class="form-control">
                 <input type="submit" name="submit" value="Submit">
             </div>
+            <div class="form-image">
+   <img src="images/visa.png" alt="Image 1">
+   <img src="images/mastercard.png" alt="Image 2">
+   <img src="images/paypal.png" alt="Image 3">
+</div>
         </form>
     </div>
 </body>
