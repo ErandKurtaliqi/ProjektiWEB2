@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Titulli i faqes</title>
+	<title>Information Page</title>
 	<style>
         html{
             font-size: 62.5%;
@@ -77,12 +77,20 @@
 <body>
     <div class="container">
         <div class="form">
-            <h3>Sigurohuni që të keni kohën e nevojshme për të plotësuar të gjitha fushat e kërkuara në formën e blerjes së biletës.</h3>
+            <h3>Cancellation Policy: Customers are informed of the cancellation policy that in the event of 
+                cancellation of a trip, where the same has paid, only 50% of the amount will be refunded.</h3>
             <div class="checkbox" id="checkbox1"></div>
-            <h3>Kontrolloni vërejtjet e veta për çdo lloj gabimi ose gabimi nën procesin e blerjes. Ju lutemi, sigurohuni që të jeni të sigurt për datat e saktë të udhëtimit, destinacionin, si dhe emrin dhe mbiemrin e udhëtarëve.</h3>
+            <h3>Refund Policy: Refunded money will be returned to the same account number that you used 
+                for payment.</h3>
             <div class="checkbox" id="checkbox2"></div>
-            <h3>Për të vazhduar me procesin e blerjes së biletës, ju lutemi, konfirmoni se keni lexuar dhe pajtoheni me kushtet dhe rregulloret tona.</h3>
+            <h3>Confirmation of Personal Information: Customers must confirm their full personal information 
+                before making payment. Your information will only be used for identification and system 
+                purposes.</h3>
             <div class="checkbox" id="checkbox3"></div>
+            <h3>Website Security: Website security is a very important factor for customers. If they encounter
+                 any insecurity or misuse of their data, they are free to act based on what is stated in the 
+                 Privacy Policy.</h3>
+            <div class="checkbox" id="checkbox4"></div>
             <button id="submitBtn">Confirm</button>
         </div>
     </div>
@@ -110,14 +118,24 @@ element3.addEventListener('click', () => {
   document.head.appendChild(style);
 });
 
+const element4 = document.querySelector('#checkbox4');
+element4.addEventListener('click', () => {
+  const style = document.createElement('style');
+  style.innerHTML = '#checkbox4 {background-color: #8e44ad;}';
+  document.head.appendChild(style);
+});
+
+
         const checkbox1 = document.getElementById('checkbox1');
         const checkbox2 = document.getElementById('checkbox2');
 const checkbox3 = document.getElementById('checkbox3');
+const checkbox4 = document.getElementById('checkbox4');
 const submitBtn = document.getElementById('submitBtn');
 
 let checked1 = false;
     let checked2 = false;
     let checked3 = false;
+    let checked4 = false;
     
     checkbox1.addEventListener('click', () => {
     checked1 = !checked1;
@@ -134,11 +152,16 @@ let checked1 = false;
     checkbox3.classList.toggle('checked');
     });
     
+    checkbox4.addEventListener('click', () => {
+    checked4 = !checked4;
+    checkbox4.classList.toggle('checked');
+    });
+
     submitBtn.addEventListener('click', () => {
-    if (checked1 && checked2 && checked3) {
+    if (checked1 && checked2 && checked3 && checked4) {
         const confirmation = confirm("A jeni të sigurtë që doni të vazhdoni me blerjen e biletës?");
         if (confirmation == true) {
-            window.location.href = "https://faqa-ku-deshironi-te-ndertoni.com";
+            window.location.href = "pay.php";
         }
     } else {
         alert('Ju lutemi konfirmoni te gjitha kushtet!');

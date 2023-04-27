@@ -242,7 +242,8 @@
         
         
         <button type="submit">BOOK</button>
-        <button onclick="window.print()">Print</button>
+        <a href="info.html" class="btn" style="margin-left: 355px;">Pay</a>
+        <button onclick="window.print()" style="margin-left: 355px;">Print</button>
 
     </form>
 </section> 
