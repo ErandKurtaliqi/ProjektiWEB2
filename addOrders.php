@@ -51,22 +51,6 @@
 <button type="button" onclick="document.getElementById('tabela6').style.display='block'" class="btn"
 >Company_Fly Table</button>
 
-<!-- <script>
-function removeRow(id_booking) {
-  if (confirm("A jeni të sigurt që dëshironi të fshini këtë rresht?")) {
-    // Krijo një kërkesë AJAX për të fshirë rreshtin nga tabela
-    var xhttp = new XMLHttpRequest();
-    xhttp.onreadystatechange = function() {
-      if (this.readyState == 4 && this.status == 200) {
-        var row = document.getElementById(id);
-    row.parentNode.removeChild(row);
-  }
-};
-xhttp.open("GET", "delete_row.php?id=" + id, true);
-xhttp.send();
-  }
-}
-</script> -->
 <?php
 
 $conn = mysqli_connect("localhost", "root", "", "travel");
