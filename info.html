@@ -136,10 +136,13 @@ let checked1 = false;
     
     submitBtn.addEventListener('click', () => {
     if (checked1 && checked2 && checked3) {
-    alert('Blerja e biletes u krye me sukses!');
+        const confirmation = confirm("A jeni të sigurtë që doni të vazhdoni me blerjen e biletës?");
+        if (confirmation == true) {
+            window.location.href = "https://faqa-ku-deshironi-te-ndertoni.com";
+        }
     } else {
-    alert('Ju lutemi konfirmoni te gjitha kushtet!');
+        alert('Ju lutemi konfirmoni te gjitha kushtet!');
     }
-    });
+});
     </script>
 
