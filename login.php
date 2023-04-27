@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>LOGIN</title>
-	<link rel="stylesheet" type="text/css" href="controlPage.css">
+	<link rel="stylesheet" type="text/css" href="signup.css">
 </head>
 <body>
 	 <div class="wrapper">
@@ -30,10 +30,10 @@
 
           
 			   <div class="field">
-     	<input type="text" name="uname" placeholder="User Name"><br>
+     	<input type="text" name="uname" id="placeholder" placeholder="User Name"><br>
 			   </div>
 		 <div class="field">
-     	<input type="password" name="password" placeholder="Password"><br>
+     	<input type="password" name="password" id="password" placeholder="Password"><br>
 		 </div>
                   <div class="field btn">
                      <div class="btn-layer"></div>
