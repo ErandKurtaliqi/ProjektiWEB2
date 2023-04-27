@@ -123,6 +123,7 @@
                <input type="text" 
                       name="phone"
                       id="phone" 
+                      min="1"
                       placeholder="Phone">
         <?php }?>
 
@@ -206,6 +207,7 @@
                <input type="number" 
                       name="guests"
                       id="guests" 
+                      min="1"
                       placeholder="Guests">
         <?php }?>
 
