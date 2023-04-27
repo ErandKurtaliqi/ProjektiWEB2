@@ -20,9 +20,7 @@
         <a href = "pageage.php">PACKAGE</a>
         <a href = "book_form.php">BOOK</a>
     </nav>
-    <nav class = "navbar23">
-    <a href = "login.php" >Login</a>
-    </nav>
+    
 
     <div id = "menu-btn" class = "fas fa-bars"></div>
 
