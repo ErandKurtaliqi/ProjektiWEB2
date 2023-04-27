@@ -70,7 +70,6 @@ $id = 3;
 
 $delete = mysqli_query($conn, "DELETE FROM booking WHERE id_booking = '$id'");
 if ($delete) {
-    echo "Rreshti është fshirë me sukses.";
 } else {
     echo "Gabim gjatë fshirjes së rreshtit.";
 }
