@@ -85,45 +85,7 @@ if (isset($_POST['names']) && isset($_POST['email'])
         header("Location: book_form.php?error=Leaving is required&$user_data");
 	    exit();
 	}
-
-// 		$sql = "SELECT 
-//     booking.guests,  
-//     countries.price_countries, 
-//     (countries.price_countries * booking.guests) AS total_price
-// FROM 
-//     orders 
-//     JOIN booking ON orders.id_booking = booking.id_booking
-//     JOIN hotels ON orders.id_hotels = hotels.id_hotels
-//     JOIN countries ON orders.id_countries = countries.id_countries
-//     JOIN company_fly ON orders.id_company_fly = company_fly.id_company_fly
-// WHERE 
-//      booking.id_booking = orders.id_booking";
-
-
-// 	$result = mysqli_query($conn, $sql);
-
-	// if (mysqli_num_rows($result) > 0) {
-	// 	// Shfaqni të dhënat për secilën rreshtë
-	// 	while($row = mysqli_fetch_assoc($result)) {
-		
-	// 		// echo "<script> alert('Numri i mysafirëve: " . $row["guests"]. 
-	// 			 ", Çmimi i vendit të destinacionit: " . $row["price_countries"]. 
-	// 			 ", Çmimi total: " . $row["total_price"]."<br>');</script>";
-	// 	}
-	// }
-	// else if(strlen($leaving) <= strlen($arrivals)){
-	// 	header("Location: book_form.php?error=Leaving is impossible&$user_data");
-	//     exit();
-	// }
-
-	// else{
-
-	//     $sql = "SELECT * FROM book_form1 WHERE names='$names' ";
-	// 	$result = mysqli_query($conn, $sql);
-
-	// 	if (mysqli_num_rows($result) > 0) {
-	// 		header("Location: book_form.php?error=The names is taken try another&$user_data");
-	//         exit();
+	
 	else {
            $sql2 = "INSERT INTO booking(names, email, phone, address, location, guests, arrivals, leaving)
 		            VALUES('$names', '$email', '$phone', '$address', '$location', '$guests', '$arrivals', '$leaving')";
