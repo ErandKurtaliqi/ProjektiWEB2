@@ -50,6 +50,14 @@ input[type="submit"] {
     font-size: 1rem;
 }
 
+select option{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
 input[type="submit"] {
     background-color: #007bff;
     color: #fff;

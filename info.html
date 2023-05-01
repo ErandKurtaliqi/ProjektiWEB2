@@ -72,6 +72,12 @@
             margin-bottom: 10px;
             cursor: pointer;
         }
+
+        input[type="checkbox"]:checked {
+  /* Stilizimi i checkbox-it të zgjedhur /
+  / Për shembull, vendosni një imazh si sfond */
+  background-image: url(images/tik.png);
+}
 	</style>
 </head>
 <body>
@@ -79,7 +85,7 @@
         <div class="form">
             <h3>Cancellation Policy: Customers are informed of the cancellation policy that in the event of 
                 cancellation of a trip, where the same has paid, only 50% of the amount will be refunded.</h3>
-            <div class="checkbox" id="checkbox1"></div>
+            <div class="checkbox" type="checkbox" id="checkbox1"></div>
             <h3>Refund Policy: Refunded money will be returned to the same account number that you used 
                 for payment.</h3>
             <div class="checkbox" id="checkbox2"></div>
@@ -100,28 +106,28 @@
 const element = document.querySelector('#checkbox1');
 element.addEventListener('click', () => {
   const style = document.createElement('style');
-  style.innerHTML = '#checkbox1 {background-color: #8e44ad;}';
+  style.innerHTML = '#checkbox1 {background-image: url(images/tik.png); width: 20px; height: 20px; background-size: 20px 20px;}';
   document.head.appendChild(style);
 });
 
 const element2 = document.querySelector('#checkbox2');
 element2.addEventListener('click', () => {
   const style = document.createElement('style');
-  style.innerHTML = '#checkbox2 {background-color: #8e44ad;}';
+  style.innerHTML = '#checkbox2 {background-image: url(images/tik.png); width: 20px; height: 20px; background-size: 20px 20px;}';
   document.head.appendChild(style);
 });
 
 const element3 = document.querySelector('#checkbox3');
 element3.addEventListener('click', () => {
   const style = document.createElement('style');
-  style.innerHTML = '#checkbox3 {background-color: #8e44ad;}';
+  style.innerHTML = '#checkbox3 {background-image: url(images/tik.png); width: 20px; height: 20px; background-size: 20px 20px;}';
   document.head.appendChild(style);
 });
 
 const element4 = document.querySelector('#checkbox4');
 element4.addEventListener('click', () => {
   const style = document.createElement('style');
-  style.innerHTML = '#checkbox4 {background-color: #8e44ad;}';
+  style.innerHTML = '#checkbox4 {background-image: url(images/tik.png); width: 20px; height: 20px; background-size: 20px 20px;}';
   document.head.appendChild(style);
 });
 

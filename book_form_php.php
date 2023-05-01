@@ -26,7 +26,7 @@ if (isset($_POST['names']) && isset($_POST['email'])
 	$leaving = validate($_POST['leaving']);
 
 	$user_data = 'names='. $names;
-
+	$user_data1 = 'email='. $email;
 
 	if (empty($names)) {
 		header("Location: book_form.php?error=Name is required&$user_data");
@@ -37,10 +37,10 @@ if (isset($_POST['names']) && isset($_POST['email'])
 	}
 
 	else if(empty($email)){
-        header("Location: book_form.php?error=Email is required&$user_data");
+        header("Location: book_form.php?error=Email is required&$user_data1");
 	    exit();
 	}else if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
-		header("Location: book_form.php?error=Invalid email format&$user_data");
+		header("Location: book_form.php?error=Invalid email format&$user_data1");
 	    exit();
 	}
 	
@@ -52,13 +52,13 @@ if (isset($_POST['names']) && isset($_POST['email'])
 	    exit();
 	}
 
-	else if(empty($address)){
-        header("Location: book_form.php?error=Address is required&$user_data");
-	    exit();
-	}else if(strlen($address) > 40){
-		header("Location: book_form.php?error=Specify the address in less than 40 characters&$user_data");
-	    exit();
-	}
+	// else if(empty($address)){
+    //     header("Location: book_form.php?error=Address is required&$user_data");
+	//     exit();
+	// }else if(strlen($address) > 40){
+	// 	header("Location: book_form.php?error=Specify the address in less than 40 characters&$user_data");
+	//     exit();
+	// }
 
 	else if(empty($location)){
         header("Location: book_form.php?error=Location is required&$user_data");
