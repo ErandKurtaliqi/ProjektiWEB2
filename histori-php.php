@@ -27,7 +27,8 @@ if (isset($_POST['username']) && isset($_POST['password'])) {
         header("Location: histori.php?error=Password is required");
 	    exit();
 	}else{
-		
+		// hashing the password
+        
 		$sql2 = "SELECT * FROM user_reg WHERE username_user_reg='$username' AND password='$password'";
 
 		$result = mysqli_query($conn, $sql2);
@@ -38,15 +39,18 @@ if (isset($_POST['username']) && isset($_POST['password'])) {
             	$_SESSION['username_user_reg'] = $row['username_user_reg'];
             	$_SESSION['name_user_reg'] = $row['name_user_reg'];
             	$_SESSION['id_user_reg'] = $row['id_user_reg'];
+            	header("Location: histori-php.php");
+		        exit();
             }else{
-				header("Location: login.php?error=Incorect User name or password");
-				exit();
+				header("Location: histori.php?error=Incorect User name or password");
+		        exit();
 			}
-		}else{
-			header("Location: login.php?error=Incorect User name or password");
-	        exit();
 		}
 	}
+	
+}else{
+	header("Location: histori.php");
+	exit();
 }
 
 $sql = "SELECT * FROM orders 
