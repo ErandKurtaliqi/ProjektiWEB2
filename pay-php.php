@@ -39,9 +39,9 @@
     $row = $result->fetch_assoc();
 
     if ($row['total_price'] > '1') {
-      echo "Transaksioni u kry me sukses.";
+      echo "The transaction was successful.";
     } else {
-      echo "Transaksioni dështoi. Ju lutem provoni përsëri.";
+      echo "The transaction failed. Please try again.";
     }
 
     $stmt->close();

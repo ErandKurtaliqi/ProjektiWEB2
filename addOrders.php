@@ -123,7 +123,7 @@ echo "<tr><td>".$row["id_booking"]."</td>
 }
 echo "</table>";
 } else {
-echo "Nuk u gjet asnje rezultat.";
+echo "No results found.";
 }
 
 echo "<br>";
@@ -157,7 +157,7 @@ echo "<tr><td>" . $row["id_orders"] . "</td>
 }
 echo "</table>";
 } else {
-echo "Nuk u gjet asnje rezultat.";
+echo "No results found.";
 }
 
 echo "<br>";
@@ -187,7 +187,7 @@ echo "<tr><td>" . $row["id_hotels"] . "</td>
 }
 echo "</table>";
 } else {
-echo "Nuk u gjet asnje rezultat.";
+echo "No results found.";
 }
 
 echo "<br>";
@@ -218,7 +218,7 @@ echo "<tr><td>" . $row["id_countries"] . "</td>
 }
 echo "</table>";
 } else {
-echo "Nuk u gjet asnje rezultat.";
+echo "No results found.";
 }
 
 echo "<br>";
@@ -246,7 +246,7 @@ echo "<tr><td>" . $row["id_user_reg"] . "</td>
 }
 echo "</table>";
 } else {
-echo "Nuk u gjet asnje rezultat.";
+echo "No results found.";
 }
 
 echo "<br>";
@@ -276,7 +276,7 @@ echo "<tr><td>" . $row["id_company_fly"] . "</td>
 }
 echo "</table>";
 } else {
-echo "Nuk u gjet asnje rezultat.";
+echo "No results found.";
 }
 ?>
 </body>

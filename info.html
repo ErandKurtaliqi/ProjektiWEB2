@@ -181,12 +181,12 @@ element5.addEventListener('click', () => {
 
     submitBtn.addEventListener('click', () => {
     if (checked1 && checked2 && checked3 && checked4 && checked5) {
-        const confirmation = confirm("A jeni të sigurtë që doni të vazhdoni me blerjen e biletës?");
+        const confirmation = confirm("Are you sure you want to proceed with the ticket purchase?");
         if (confirmation == true) {
             window.location.href = "pay.php";
         }
     } else {
-        alert('Ju lutemi konfirmoni te gjitha kushtet!');
+        alert('Please confirm all the conditions!');
     }
 });
     </script>

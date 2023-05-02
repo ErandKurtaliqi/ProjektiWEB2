@@ -95,7 +95,7 @@ if (mysqli_num_rows($result) > 0) {
     }
     echo "</table>";
 } else {
-    echo "Nuk u gjet asnje rezultat.";
+    echo "No results found.";
 }
 
 

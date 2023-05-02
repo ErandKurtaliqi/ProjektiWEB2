@@ -49,13 +49,14 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                 </div>
-                <p>I appreciated the fact that the website offered special deals and discounts for online
-                     ticket purchases, helping me make a more economical choice. The information on the 
-                     website was clear and comprehensive, allowing me to understand the travel details before 
-                     making the purchase.</p>
-                <h3>John Deo</h3>
-                <span>traveler</span>
-                <img src="images/JOHNDEO.png" alt="">
+                <p>
+Paris Hotel is a wonderful hotel located in the city center. It has beautifully decorated rooms, offers
+ excellent service, and has a relaxing atmosphere. It has an exquisite restaurant that serves excellent food
+  from international and local cuisine. It also has additional services such as a fitness center and spa to 
+  enhance your stay.</p>
+                <h3>SO Paris</h3>
+                <span>Hotel</span>
+                <img src="images/SO-Paris.jpg" alt="">
             </div>
 
             <div class="swiper-slide">
@@ -65,13 +66,14 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                 </div>
-                <p>As a customer who has purchased travel tickets online from this website,
-                     I have had a satisfying experience. The website was user-friendly and offered a wide
-                      range of tickets for different destinations. The ticket purchasing process was simple
-                       and fast, allowing me to select the date easily.</p>
-                <h3>Olivia Garcia</h3>
-                <span>traveler</span>
-                <img src="images/client1.jpg" alt="">
+                <p>Pod Times Square is a modern and stylish hotel located in the heart of Times Square.
+                     It offers compact yet comfortable rooms with all the necessary amenities. The hotel is 
+                     in a prime location, perfect for exploring the vibrant city and its famous attractions.
+                      It also provides convenient on-site facilities such as a lobby lounge, communal 
+                      kitchenette, rooftop bar, and fitness center.</p>
+                <h3>Pod Times Square</h3>
+                <span>Hotel</span>
+                <img src="images/Pod-Times-Square.jpeg" alt="">
             </div>
 
             <div class="swiper-slide">
@@ -81,29 +83,13 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                 </div>
-                <p>What I liked was the protection of my data and security during the online ticket purchasing 
-                    process. This fact made me feel satisfied that I could complete my purchase with 
-                    confidence and without concerns about the security of my personal data. Thank you, Team Travel!</p>
-                <h3>Liam Logan</h3>
-                <span>traveler</span>
-                <img src="images/client2.jpg" alt="">
-            </div>
-
-            <div class="swiper-slide">
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-                <p>I have been satisfied with my experience with this website for online travel ticket 
-                    purchases. The process was easy, secure, and with responsive customer service. 
-                    I would recommend this website to those who want to buy travel tickets online with
-                     ease and confidence.</p>
-                <h3>James Mason</h3>
-                <span>traveler</span>
-                <img src="images/client3.jpg" alt="">
+                <p>Anantara Palazzo Naiadi Rome Hotel is a luxurious and elegant hotel in the heart of Rome.
+                     It offers beautifully decorated rooms, exquisite dining options, and a range of facilities
+                      including a rooftop terrace, spa, and fitness center. Its prime location allows guests
+                       to easily explore Rome's famous landmarks and attractions.</p>
+                <h3>Anantara Palazzo Naiadi Rome Hotel</h3>
+                <span>Hotel</span>
+                <img src="images/Anantara-Palazzo-Naiadi-Rome-Hotel.jpg" alt="">
             </div>
 
             <div class="swiper-slide">
@@ -114,13 +100,13 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                 </div>
-                <p>The information was clear and comprehensive, allowing me to have a clear understanding 
-                    of the travel conditions before making the purchase. In addition, the team of this website
-                     was very responsible and helpful. Their responses were prompt and detailed in addressing
-                      my questions.</p>
-                <h3>Sophia Smith</h3>
-                <span>traveler</span>
-                <img src="images/client4.jfif" alt="">
+                <p>Britannia International Hotel Canary Wharf is a popular hotel in the vibrant Canary Wharf 
+                    district of London. It offers comfortable rooms, dining options, and additional amenities 
+                    such as a fitness center and swimming pool. The hotel's location provides easy access to 
+                    shops, restaurants, and entertainment venues.</p>
+                <h3>Britannia International Hotel Canary Wharf</h3>
+                <span>Hotel</span>
+                <img src="images/Britannia-International-Hotel-Canary-Wharf.jpg" alt="">
             </div>
 
             <div class="swiper-slide">
@@ -131,13 +117,12 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                 </div>
-                <p>The website offers tickets at competitive prices and special discounts, 
-                    helping me make a sensible and economical choice for my travel. I highly recommend this 
-                    website for those who want to purchase travel tickets online with careful consideration 
-                    of the economic aspect.</p>
-                <h3>William Jackson</h3>
-                <span>traveler</span>
-                <img src="images/client5.jpg" alt="">
+                <p>Hotel Sunroute Plaza Shinjuku is a popular hotel in Tokyo's Shinjuku district. It offers
+                     comfortable rooms, dining options, and amenities such as a fitness center. The hotel's
+                      location is convenient for exploring the city and its attractions.</p>
+                <h3>Hotel Sunroute Plaza Shinjuku</h3>
+                <span>Hotel</span>
+                <img src="images/Hotel-Sunroute-Plaza-Shinjuku.jpg" alt="">
             </div>
 
             <div class="swiper-slide">
@@ -148,14 +133,209 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                 </div>
-                <p>I found this website exceptional in terms of security. The information was well protected,
-                     and the ticket purchasing process was secure and safeguarded. The website's team was 
-                     responsible and took care to protect customers' personal data. Thank you, Team Travel!</p>
-                <h3>Isabella Miller</h3>
-                <span>traveler</span>
-                <img src="images/client6.jpg" alt="">
+                <p>Radisson Blu Hotel Lisbon is a popular hotel in Lisbon. It offers comfortable rooms, 
+                    dining options, and amenities such as a fitness center. The hotel's location is convenient
+                     for exploring the city's attractions.</p>
+                <h3>Radisson Blu Hotel Lisbon</h3>
+                <span>Hotel</span>
+                <img src="images/Radisson-Blu-Hotel-Lisbon.webp" alt="">
             </div>
 
+            <div class="swiper-slide">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>Sallés Hotel Pere IV is a popular hotel in Barcelona. It offers comfortable rooms, dining 
+                    options, and amenities such as a fitness center. The hotel is conveniently located for 
+                    exploring the city's attractions.</p>
+                <h3>Sallés Hotel Pere IV</h3>
+                <span>Hotel</span>
+                <img src="images/Sallés-Hotel-Pere-IV.jpg" alt="">
+            </div>
+
+            <div class="swiper-slide">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>Alohilani Resort Waikiki Beach is a luxurious and popular resort in Honolulu, Hawaii. It 
+                    offers comfortable rooms, dining options, and amenities such as a swimming pool and 
+                    fitness center. The resort's location near Waikiki Beach allows guests to easily enjoy
+                     the beautiful beach and water activities.</p>
+                <h3>Alohilani Resort Waikiki Beach</h3>
+                <span>Hotel</span>
+                <img src="images/Alohilani-Resort-Waikiki-Beach.jpg" alt="">
+            </div>
+
+            <div class="swiper-slide">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>CVK Park Bosphorus Hotel Istanbul is a prestigious hotel in Istanbul, Turkey. It offers
+                     luxurious rooms, dining options, and amenities such as a spa and fitness center. The 
+                     hotel is located in the vibrant Taksim neighborhood, allowing easy access to cultural 
+                     attractions and nightlife.</p>
+                <h3>CVK Park Bosphorus Hotel Istanbul</h3>
+                <span>Hotel</span>
+                <img src="images/CVK-Park-Bosphorus-Hotel-Istanbul.jpg" alt="">
+            </div>
+
+            <div class="swiper-slide">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>Park Inn by Radisson Berlin Alexanderplatz is a centrally located hotel in Berlin. It
+                     offers comfortable rooms, dining options, and amenities such as a fitness center. The 
+                     hotel's location allows for easy exploration of nearby attractions and shopping areas.</p>
+                <h3>Park Inn by Radisson Berlin Alexanderplatz</h3>
+                <span>Hotel</span>
+                <img src="images/Park-Inn-by-Radisson-Berlin-Alexanderplatz.jpg" alt="">
+            </div>
+
+            <div class="swiper-slide">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>Pyramisa Suites Hotel Cairo is a popular hotel in Cairo, Egypt. It offers comfortable 
+                    suites, dining options, and amenities such as a fitness center and swimming pool. The 
+                    hotel's location allows for easy access to nearby attractions and shopping areas.</p>
+                <h3>Pyramisa Suites Hotel Cairo</h3>
+                <span>Hotel</span>
+                <img src="images/Pyramisa-Suites-Hotel-Cairo.jpg" alt="">
+            </div>
+
+            <div class="swiper-slide">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>Taj Hotel & Convention Centre Agra is a prestigious hotel in Agra, India. It offers 
+                    luxurious rooms, dining options, and amenities such as a fitness center and spa. 
+                    The hotel's location allows for easy access to major attractions, including the iconic
+                     Taj Mahal.</p>
+                <h3>Taj Hotel & Convention Centre Agra</h3>
+                <span>Hotel</span>
+                <img src="images/Taj-Hotel-&-Convention-Centre-Agra.jpeg" alt="">
+            </div>
+
+            <div class="swiper-slide">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>Antico Panada is a renowned hotel in the heart of Venice, Italy. It offers comfortable 
+                    rooms, dining options, and additional amenities. The hotel's location allows for easy 
+                    exploration of nearby attractions and cultural sites.</p>
+                <h3>Antico Panada</h3>
+                <span>Hotel</span>
+                <img src="images/Antico-Panada.jpg" alt="">
+            </div>
+
+            <div class="swiper-slide">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>LYF Funan Singapore is a trendy co-living hotel in Funan Mall, Singapore. It offers 
+                    stylish accommodations, communal spaces, and amenities such as a fitness center. The
+                     hotel's location provides easy access to shopping and dining options.</p>
+                <h3>LYF Funan Singapore</h3>
+                <span>Hotel</span>
+                <img src="images/LYF-Funan-Singapore.jpg" alt="">
+            </div>
+
+            <div class="swiper-slide">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>One King West Hotel and Residence is a prominent hotel in downtown Toronto. It offers
+                     comfortable rooms, dining options, and amenities such as a fitness center. The hotel's 
+                     location allows for easy access to nearby attractions and shopping areas.</p>
+                <h3>One King West Hotel and Residence</h3>
+                <span>Hotel</span>
+                <img src="images/One-King-West-Hotel-and-Residence.jpg" alt="">
+            </div>
+
+            <div class="swiper-slide">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>Shangri-La Sydney is a luxurious hotel in Sydney, Australia. It offers comfortable rooms,
+                     dining options, and amenities such as a fitness center and swimming pool. The hotel's 
+                     location in The Rocks neighborhood allows for easy exploration of nearby attractions.</p>
+                <h3>Shangri-La Sydney</h3>
+                <span>Hotel</span>
+                <img src="images/Shangri-La-Sydney.jpg" alt="">
+            </div>
+
+            <div class="swiper-slide">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>Holiday Inn - Lima Airport is a convenient hotel near Jorge Chavez International Airport 
+                    in Lima, Peru. It offers comfortable rooms, dining options, and amenities such as a 
+                    fitness center. The hotel is popular for its proximity to the airport, making it a 
+                    convenient choice for travelers.</p>
+                <h3>Holiday Inn - Lima Airport</h3>
+                <span>Hotel</span>
+                <img src="images/Holiday-Inn-Lima-Airport.jpg" alt="">
+            </div>
+
+            <div class="swiper-slide">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>CitiGO Hotel Sanyuanqiao Beijing is a modern hotel in Beijing, China. It offers comfortable
+                     rooms, dining options, and amenities such as a fitness center. The hotel's location 
+                     allows for easy access to nearby attractions and transportation hubs.</p>
+                <h3>CitiGO Hotel Sanyuanqiao Beijing</h3>
+                <span>Hotel</span>
+                <img src="images/CitiGO-Hotel-Sanyuanqiao-Beijing.webp" alt="">
+            </div>
         </div>
     </div>
 </section>

@@ -15,11 +15,11 @@ if (isset($_POST['user']) && isset($_POST['pass1'])) {
 	$user = validate($_POST['user']);
 	$pass1 = validate($_POST['pass1']);
 
-	if (empty($uname)) {
-		header("Location: welcome.php?error=User Name is required");
+	if (!empty($uname)) {
+		echo "<script>alert('Username is required!');</script>";
 	    exit();
-	}else if(empty($pass)){
-        header("Location: welcome.php?error=Password is required");
+	}else if(!empty($pass)){
+        echo "<script>alert('Password is required!');</script>";
 	    exit();
 	}else{
         
@@ -47,5 +47,4 @@ if (isset($_POST['user']) && isset($_POST['pass1'])) {
 	
 }else{
 	header("Location: login.php");
-	exit();
 }
