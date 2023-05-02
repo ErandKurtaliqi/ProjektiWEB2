@@ -39,10 +39,12 @@ if (isset($_POST['username']) && isset($_POST['password'])) {
             	$_SESSION['name_user_reg'] = $row['name_user_reg'];
             	$_SESSION['id_user_reg'] = $row['id_user_reg'];
             }else{
-				echo "Incorect username or password";
+				header("Location: login.php?error=Incorect User name or password");
+				exit();
 			}
 		}else{
-			echo "";
+			header("Location: login.php?error=Incorect User name or password");
+	        exit();
 		}
 	}
 }
