@@ -25,9 +25,8 @@ if (isset($_POST['names']) && isset($_POST['email'])
 	$arrivals = validate($_POST['arrivals']);
 	$leaving = validate($_POST['leaving']);
 
-	$user_data = 'names='. $names;
-	$user_data1 = 'email='. $email;
-
+	$user_data .= 'names='. $names;
+	
 	if (empty($names)) {
 		header("Location: book_form.php?error=Name is required&$user_data");
 	    exit();
@@ -36,53 +35,50 @@ if (isset($_POST['names']) && isset($_POST['email'])
 	    exit();
 	}
 
-	else if(empty($email)){
-        header("Location: book_form.php?error=Email is required&$user_data1");
+	$user_data1 .= 'email='. $email;
+
+	if(empty($email)){
+        header("Location: book_form.php?error=Email is required&$user_data1;");
 	    exit();
 	}else if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
-		header("Location: book_form.php?error=Invalid email format&$user_data1");
+		header("Location: book_form.php?error=Invalid email format&$user_data1;");
 	    exit();
 	}
-	
-	else if(empty($phone)){
-        header("Location: book_form.php?error=Phone is required&$user_data");
+
+	$user_data2 .= 'phone='. $phone;
+
+	if(empty($phone)){
+        header("Location: book_form.php?error=Phone is required&$user_data2");
 	    exit();
 	}else if($phone <= 0){
-		header("Location: book_form.php?error=Phone is invalid&$user_data");
+		header("Location: book_form.php?error=Phone is invalid&$user_data2");
 	    exit();
 	}
 
-	// else if(empty($address)){
-    //     header("Location: book_form.php?error=Address is required&$user_data");
-	//     exit();
-	// }else if(strlen($address) > 40){
-	// 	header("Location: book_form.php?error=Specify the address in less than 40 characters&$user_data");
-	//     exit();
-	// }
+	$user_data3 .= 'guests='. $guests;
 
-	else if(empty($location)){
-        header("Location: book_form.php?error=Location is required&$user_data");
-	    exit();
-	}
-
-	else if(empty($guests)){
-        header("Location: book_form.php?error=Guests is required&$user_data");
+	if(empty($guests)){
+        header("Location: book_form.php?error=Guests is required&$user_data3");
 	    exit();
 	}else if($guests <= 0){
-		header("Location: book_form.php?error=If you want to booking, please write a number pozitiv&$user_data");
+		header("Location: book_form.php?error=If you want to booking, please write a number pozitiv&$user_data3");
 	    exit();
 	}
 
-	else if(empty($arrivals)){
-        header("Location: book_form.php?error=Arrivals is required&$user_data");
+	$user_data4 .= 'arrivals='. $arrivals;
+
+	if(empty($arrivals)){
+        header("Location: book_form.php?error=Arrivals is required&$user_data4");
 	    exit();
 	}else if($arrivals < date("Y-m-d")){
-		header("Location: book_form.php?error=You cannot reserve the date that has passed&$user_data");
+		header("Location: book_form.php?error=You cannot reserve the date that has passed&$user_data4");
 	    exit();
 	}
 
-	else if(empty($leaving)){
-        header("Location: book_form.php?error=Leaving is required&$user_data");
+	$user_data5 .= 'leaving='. $leaving;
+
+	if(empty($leaving)){
+        header("Location: book_form.php?error=Leaving is required&$user_data5");
 	    exit();
 	}
 	

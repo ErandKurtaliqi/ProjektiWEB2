@@ -27,9 +27,8 @@
 			   <?php if (isset($_GET['error'])) { ?>
      		<p class="error"><?php echo $_GET['error']; ?></p>
      	<?php } ?>
-
-          
-			   <div class="field">
+      
+      <div class="field">
      	<input type="text" name="uname" id="placeholder" placeholder="User Name"><br>
 			   </div>
 		 <div class="field">
@@ -44,6 +43,10 @@
                   </div>
                </form>
                <form action="controlPage-php.php" method="post" class="signup" name="forma2">
+                  <?php if (isset($_GET['error'])) { ?>
+     		         <p class="error"><?php echo $_GET['error']; ?></p>
+     	            <?php } ?>
+                  
                   <div class="field">
                      <input type="text" placeholder="Email Address" name="user" required>
                   </div>

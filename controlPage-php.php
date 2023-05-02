@@ -15,11 +15,11 @@ if (isset($_POST['user']) && isset($_POST['pass1'])) {
 	$user = validate($_POST['user']);
 	$pass1 = validate($_POST['pass1']);
 
-	if (empty($user)) {
-		echo "<script>alert('Name is empty'); </script>";
+	if (empty($uname)) {
+		header("Location: welcome.php?error=User Name is required");
 	    exit();
-	}else if(empty($pass1)){
-        echo "<script>alert('Password is empty'); </script>";
+	}else if(empty($pass)){
+        header("Location: welcome.php?error=Password is required");
 	    exit();
 	}else{
         
@@ -36,11 +36,11 @@ if (isset($_POST['user']) && isset($_POST['pass1'])) {
             	header("Location: adminPage.php");
 		        exit();
             }else{
-				echo "<script>alert('Incorect User name or password'); </script>";
+				header("Location: login.php?error=Incorect User name or password");
 		        exit();
 			}
 		}else{
-			echo "<script>alert('Incorect User name or password'); </script>";
+			header("Location: login.php?error=Incorect User name or password");
 	        exit();
 		}
 	}
