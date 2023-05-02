@@ -97,6 +97,8 @@
                  any insecurity or misuse of their data, they are free to act based on what is stated in the 
                  Privacy Policy.</h3>
             <div class="checkbox" id="checkbox4"></div>
+            <h3>"You cannot make an online payment if you are not <a href="signup.php">'Signed Up'</a> on our website."</h3>
+            <div class="checkbox" id="checkbox5"></div>
             <button id="submitBtn">Confirm</button>
         </div>
     </div>
@@ -131,17 +133,26 @@ element4.addEventListener('click', () => {
   document.head.appendChild(style);
 });
 
+const element5 = document.querySelector('#checkbox5');
+element5.addEventListener('click', () => {
+  const style = document.createElement('style');
+  style.innerHTML = '#checkbox5 {background-image: url(images/tik.png); width: 20px; height: 20px; background-size: 20px 20px;}';
+  document.head.appendChild(style);
+});
+
 
         const checkbox1 = document.getElementById('checkbox1');
         const checkbox2 = document.getElementById('checkbox2');
-const checkbox3 = document.getElementById('checkbox3');
-const checkbox4 = document.getElementById('checkbox4');
-const submitBtn = document.getElementById('submitBtn');
+        const checkbox3 = document.getElementById('checkbox3');
+        const checkbox4 = document.getElementById('checkbox4');
+        const checkbox5 = document.getElementById('checkbox5');
+        const submitBtn = document.getElementById('submitBtn');
 
-let checked1 = false;
+    let checked1 = false;
     let checked2 = false;
     let checked3 = false;
     let checked4 = false;
+    let checked5 = false;
     
     checkbox1.addEventListener('click', () => {
     checked1 = !checked1;
@@ -163,8 +174,13 @@ let checked1 = false;
     checkbox4.classList.toggle('checked');
     });
 
+    checkbox5.addEventListener('click', () => {
+    checked5 = !checked5;
+    checkbox5.classList.toggle('checked');
+    });
+
     submitBtn.addEventListener('click', () => {
-    if (checked1 && checked2 && checked3 && checked4) {
+    if (checked1 && checked2 && checked3 && checked4 && checked5) {
         const confirmation = confirm("A jeni të sigurtë që doni të vazhdoni me blerjen e biletës?");
         if (confirmation == true) {
             window.location.href = "pay.php";
