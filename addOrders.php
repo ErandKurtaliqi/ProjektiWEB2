@@ -1,6 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+<script>
+function deleteRow(id_booking) {
+    if (confirm("A jeni i sigurt që dëshironi të fshini këtë rresht?")) {
+        fetch("DeleteRoww.php", {
+            method: "POST",
+            body: JSON.stringify({id_booking: id_booking}),
+            headers: {
+                "Content-Type": "application/json"
+            }
+        })
+        .then(response => {
+            if (response.ok) {
+                location.reload();
+            } else {
+                throw new Error("Diçka shkoi keq gjatë fshirjes së rreshtit.");
+            }
+        })
+        .catch(error => {
+            console.error("Gabim:", error);
+        });
+    }
+}
+
+</script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -66,13 +91,13 @@ $sql4 = "SELECT * FROM countries";
 $sql5 = "SELECT * FROM user_reg";
 $sql6 = "SELECT * FROM company_fly";
 
-$id = 3;
+// $id = 3;
 
-$delete = mysqli_query($conn, "DELETE FROM booking WHERE id_booking = '$id'");
-if ($delete) {
-} else {
-    echo "Gabim gjatë fshirjes së rreshtit.";
-}
+// $delete = mysqli_query($conn, "DELETE FROM booking WHERE id_booking = '$id'");
+// if ($delete) {
+// } else {
+//     echo "Gabim gjatë fshirjes së rreshtit.";
+// }
 
 
 $result = mysqli_query($conn, $sql);
@@ -101,7 +126,7 @@ echo "<tr><td>".$row["id_booking"]."</td>
 <td>".$row["leaving"]."</td>
 <td>
 <span id='6' class='action_btn'>
-<a href='?id_booking=".$row['id_booking']."' class='delete_btn' onclick='return confirm(\"A jeni i sigurt që dëshironi të fshini rreshtin?\")'>Delete</a>
+<a href='#' class='delete_btn' onclick='deleteRow(".$row["id_booking"].")'>Delete</a>
 </span>
 </td>";
 }
