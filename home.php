@@ -140,6 +140,15 @@
 <!-- home about section ends -->
 
 <!-- home package section starts -->
+<section class="weather"> <b>You can also see weather</b><a href="weather.html"> <b>here</b></a>
+    <style>
+        .weather{
+            background-color: lightgrey;
+            text-align: center;
+            font-size: 20px;
+        }
+    </style>
+</section>
 
 <section class="home-packages">
     <h1 class="heading-title">New Packages</h1>
