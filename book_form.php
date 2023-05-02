@@ -207,7 +207,6 @@
                <input type="number" 
                       name="guests"
                       id="guests" 
-                      min="1"
                       placeholder="Guests">
         <?php }?>
 
