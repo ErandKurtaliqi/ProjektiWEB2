@@ -91,15 +91,6 @@ $sql4 = "SELECT * FROM countries";
 $sql5 = "SELECT * FROM user_reg";
 $sql6 = "SELECT * FROM company_fly";
 
-// $id = 3;
-
-// $delete = mysqli_query($conn, "DELETE FROM booking WHERE id_booking = '$id'");
-// if ($delete) {
-// } else {
-//     echo "Gabim gjatë fshirjes së rreshtit.";
-// }
-
-
 $result = mysqli_query($conn, $sql);
 
 if (mysqli_num_rows($result) > 0) {
