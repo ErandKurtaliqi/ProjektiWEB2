@@ -9,6 +9,25 @@
     <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <link rel = "stylesheet" href = "style.css">
 	<link rel="stylesheet" href="bokk.css">
+    <style>
+        .error {
+   background: #F2DEDE;
+   color: #A94442;
+   padding: 10px;
+   width: 95%;
+   border-radius: 5px;
+   margin: 20px auto;
+}
+
+.success {
+   background: #D4EDDA;
+   color: #40754C;
+   padding: 10px;
+   width: 95%;
+   border-radius: 5px;
+   margin: 20px auto;
+}
+    </style>
 </head>
 <body>
     <!-- header section starts -->
@@ -84,12 +103,16 @@ Our Sales Team</p>
 
 <!-- home about section ends -->
 
-<h1 style="align-items: center;">My History</h1>
+<h1 style="align-items: center; font-size: 3rem; margin-left: 530px; margin-bottom: 10px;">My History</h1>
 	<form action="histori-php.php" method="post" class="book-forma" background="none">
-		<label style="font-size: 2rem; align-items: center; ">Username:</label><br>
-		<input type="text" id="uname" name="username" style="border-radius: 5px; align-items: center;" placeholder="Email"><br>
-		<label style="font-size: 2rem;">Password:</label><br>
-		<input type="password" id="password" name="password" style="border-radius: 5px;" placeholder="Password">
+    <?php if (isset($_GET['error'])) { ?>
+     		<p class="error"><?php echo $_GET['error']; ?></p>
+     	<?php } ?>
+
+		<label style="font-size: 3rem; position: relative; margin-top: 5px;">Username:</label><br>
+		<input type="text" id="uname" name="username" style="border-radius: 5px; align-items: center; font-size: 3rem; " placeholder="Email"><br><br>
+		<label style="font-size: 3rem; margin-top: 5px;">Password:</label><br>
+		<input type="password" id="password" name="password" style="border-radius: 5px; font-size: 3rem;" placeholder="Password">
 		<button type="submit">Shiko historine</button>
 	</form>
 	<div id="history"></div>
