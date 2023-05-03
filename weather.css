@@ -1,107 +1,107 @@
-/* Reset CSS */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
-}
+      /* Reset CSS */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
 
-body {
-  background-image: url('background.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  width: 100vw;
-  transition: background-color 0.5s ease;
-}
+      body {
+        background-image: url('background.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        width: 100vw;
+        transition: background-color 0.5s ease;
+      }
 
-input[type="text"] {
-  padding: 10px;
-  border: 1px solid #8e44ad;
-  border-radius: 5px;
-  margin-bottom: 15px;
-  width: 200px;
-  font-size: 1.1rem;
-  transition: border-color 0.3s ease;
-}
+      input[type="text"] {
+        padding: 10px;
+        border: 1px solid #8e44ad;
+        border-radius: 5px;
+        margin-bottom: 15px;
+        width: 200px;
+        font-size: 1.1rem;
+        transition: border-color 0.3s ease;
+      }
 
-input[type="text"]:focus {
-  border-color: #5e3099;
-  outline: none;
-}
+      input[type="text"]:focus {
+        border-color: #5e3099;
+        outline: none;
+      }
 
-button {
-  padding: 10px 20px;
-  background-color: #8e44ad;
-  border: none;
-  border-radius: 5px;
-  color: white;
-  font-weight: bold;
-  cursor: pointer;
-  margin-bottom: 20px;
-  transition: background-color 0.3s ease;
-}
+      button {
+        padding: 10px 20px;
+        background-color: #8e44ad;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+        margin-bottom: 20px;
+        transition: background-color 0.3s ease;
+      }
 
-button:hover {
-  background-color: #5e3099;
-}
+      button:hover {
+        background-color: #5e3099;
+      }
 
-.weather-container {
-  background-color: rgba(255, 255, 255, 0.7);
-  border-radius: 10px;
-  padding: 20px;
-  display: inline-block;
-  text-align: center;
-  transition: background-color 0.5s ease;
-}
+      .weather-container {
+        background-color: rgba(255, 255, 255, 0.7);
+        border-radius: 10px;
+        padding: 20px;
+        display: inline-block;
+        text-align: center;
+        transition: background-color 0.5s ease;
+      }
 
-.city, .country, .description, .temperature, .humidity {
-  font-size: 1.5rem;
-  margin-bottom: 15px;
-  color: #8e44ad;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
-}
+      .city, .country, .description, .temperature, .humidity {
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+        color: #8e44ad;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+      }
 
-.city, .country {
-  font-weight: bold;
-}
+      .city, .country {
+        font-weight: bold;
+      }
 
-.description {
-  font-style: italic;
-}
+      .description {
+        font-style: italic;
+      }
 
-.temperature, .humidity {
-  font-weight: bold;
-}
+      .temperature, .humidity {
+        font-weight: bold;
+      }
 
-.weather-container {
-  background-color: rgba(255, 255, 255, 0.9);
-  border-radius: 10px;
-  padding: 20px;
-  display: inline-block;
-  text-align: center;
-  transition: background-color 0.5s ease;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  max-width: 400px;
-  width: 90%;
-}
+      .weather-container {
+        background-color: rgba(255, 255, 255, 0.9);
+        border-radius: 10px;
+        padding: 20px;
+        display: inline-block;
+        text-align: center;
+        transition: background-color 0.5s ease;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        max-width: 400px;
+        width: 90%;
+      }
 
-.city, .country {
-  font-size: 1.8rem;
-  margin-bottom: 15px;
-  color: #8e44ad;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
-}
+      .city, .country {
+        font-size: 1.8rem;
+        margin-bottom: 15px;
+        color: #8e44ad;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+      }
 
-.description, .temperature, .humidity {
-  font-size: 1.5rem;
-  margin-bottom: 15px;
-  color: #8e44ad;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
-}
+      .description, .temperature, .humidity {
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+        color: #8e44ad;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+      }
 
