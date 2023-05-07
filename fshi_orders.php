@@ -2,11 +2,7 @@
 if (isset($_POST['id_orders'])) {
   $id_orders = $_POST['id_orders'];
 
-  $conn = mysqli_connect("localhost", "root", "", "travel");
-
-  if (!$conn) {
-    die("Connection failed: " . mysqli_connect_error());
-}
+include "book-db.php";
 
 $sql = "DELETE FROM orders WHERE id_orders = ?";
 $stmt = mysqli_prepare($conn, $sql);

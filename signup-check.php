@@ -1,5 +1,7 @@
 <?php 
-session_start(); 
+
+session_start();
+ 
 include "book-db.php";
 
 if (isset($_POST['uname']) && isset($_POST['password'])

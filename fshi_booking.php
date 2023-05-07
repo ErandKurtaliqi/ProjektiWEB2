@@ -1,12 +1,8 @@
 <?php
 if (isset($_POST['id_booking'])) {
   $id_booking = $_POST['id_booking'];
-
-  $conn = mysqli_connect("localhost", "root", "", "travel");
-
-  if (!$conn) {
-    die("Connection failed: " . mysqli_connect_error());
-}
+  
+  include "book-db.php";
 
 $sql = "DELETE FROM booking WHERE id_booking = ?";
 $stmt = mysqli_prepare($conn, $sql);

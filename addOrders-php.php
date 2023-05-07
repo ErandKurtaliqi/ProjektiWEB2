@@ -1,10 +1,6 @@
 <?php
 
-$conn = mysqli_connect("localhost", "root", "", "travel");
-
-if (!$conn) {
-    die("Connection failed: " . mysqli_connect_error());
-}
+include "book-db.php";
 
 if (isset($_POST['id_orders']) && isset($_POST['id_booking'])
     && isset($_POST['id_user_reg']) && isset($_POST['id_countries'])

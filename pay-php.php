@@ -1,10 +1,7 @@
 
 <?php
-$conn = mysqli_connect("localhost", "root", "", "llogaritja_kredive");
 
-if (!$conn) {
-  die("Lidhja me databazën ka deshtuar: " . mysqli_connect_error());
-}
+include "book-db.php";
 
 if(isset($_POST['submit'])) {
   $firstname = mysqli_real_escape_string($conn, $_POST['firstname']);

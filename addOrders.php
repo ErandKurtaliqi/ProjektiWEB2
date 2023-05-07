@@ -99,11 +99,7 @@ function fshiRresht2(id_orders) {
 
 <?php
 
-$conn = mysqli_connect("localhost", "root", "", "travel");
-
-if (!$conn) {
-    die("Connection failed: " . mysqli_connect_error());
-}
+include "book-db.php";
 
 $sql = "SELECT * FROM booking";
 $sql2 = "SELECT * FROM orders";
