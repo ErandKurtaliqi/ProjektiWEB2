@@ -1,7 +1,17 @@
 
 <?php
 
-include "book-db.php";
+$servername = "localhost"; 
+$username = "root";
+$password = ""; 
+$dbname = "LLOGARITJA_KREDIVE"; 
+
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+if ($conn->connect_error) {
+  die("Connection failed: " . $conn->connect_error);
+}
+
 
 if(isset($_POST['submit'])) {
   $firstname = mysqli_real_escape_string($conn, $_POST['firstname']);
@@ -56,10 +66,10 @@ if(isset($_POST['submit'])) {
     echo "<h2>Transaction Successful</h2>";
     echo "<table>";
     echo "<tr style = 'margin-left: 250px;'><th>Transaction Details</th><td></td></tr>";
-    echo "<tr><th>Numer Transaksioni</th><td>".$card."</td></tr>";
-    echo "<tr><th>Llogaria Prejardhese</th><td>".$card."</td></tr>";
-    echo "<tr><th>Llogaria Arritjes</th><td>150400100828394</td></tr>";
-    echo "<tr><th>Shuma e Transferuar</th><td>".$total_price." ".$row['monedha']."</td></tr>";
+    echo "<tr><th>Transaction Number</th><td>".$card."</td></tr>";
+    echo "<tr><th>Originating Account</th><td>".$card."</td></tr>";
+    echo "<tr><th>Savings Account</th><td>150400100828394</td></tr>";
+    echo "<tr><th>Transferred Amount</th><td>".$total_price." ".$row['monedha']."</td></tr>";
     echo "<tr><th>The account balance after the transaction</th><td>".$row['balanca']." ".$row['monedha']."</td></tr>";
     echo "<button onclick='downloadHTML()' style = 'margin-top:40px;'>Download</button>";
     echo "</table>";
