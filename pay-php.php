@@ -14,8 +14,8 @@ if(isset($_POST['submit'])) {
   $phone = mysqli_real_escape_string($conn, $_POST['phone']);
   $card = mysqli_real_escape_string($conn, $_POST['card']);
 
-  // Kërkoni çmimin nga tabela orders duke përdorur një parameter
-  $stmt = $conn->prepare("SELECT total_price FROM orders WHERE user_name = ?");
+  // Kërkoni total_price të gjithë user_name të njëjta nga tabela orders duke përdorur një parameter
+  $stmt = $conn->prepare("SELECT SUM(total_price) as total_price FROM orders WHERE user_name = ?");
   $stmt->bind_param("s", $email);
   $stmt->execute();
   $result = $stmt->get_result();
@@ -39,7 +39,7 @@ if(isset($_POST['submit'])) {
   $row = $result->fetch_assoc();
 
   if ($row['total_price'] > '1') {
-    $stmt = $conn->prepare("DELETE FROM orders WHERE user_name = ? LIMIT 1");
+    $stmt = $conn->prepare("DELETE FROM orders WHERE user_name = ?");
     $stmt->bind_param("s", $email);
     $stmt->execute();
 
@@ -58,12 +58,12 @@ if(isset($_POST['submit'])) {
     echo "<tr><th>Llogaria Arritjes</th><td>150400100828394</td></tr>";
     echo "<tr><th>Shuma e Transferuar</th><td>".$total_price." ".$row['monedha']."</td></tr>";
     echo "<tr><th>The account balance after the transaction</th><td>".$row['balanca']." ".$row['monedha']."</td></tr>";
-    echo "</table>";} else {
-      echo "The transaction failed. Please try again.";
-      }
-      
-      $stmt->close();
-      $conn->close();
-      }
-      ?>
-      
+    echo "</table>";
+    } else {
+    echo "The transaction failed. Please try again.";
+    }
+    
+    $stmt->close();
+    $conn->close();
+    }
+    ?>
