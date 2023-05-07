@@ -85,4 +85,5 @@ if(isset($_POST['submit'])) {
   element.click();
   document.body.removeChild(element);
 }
+
 </script>

@@ -33,5 +33,6 @@ const getWeatherByCityName = async () => {
         .catch(error => {
             console.error('Error:', error);
         });
+        
 };
 

@@ -55,7 +55,6 @@
          <div class = "credit">Created by <span>max trevel</span> | all rights reserved! |</div>
     </section>
     
-
     <!-- footer section ends -->
     </body>
 </html>

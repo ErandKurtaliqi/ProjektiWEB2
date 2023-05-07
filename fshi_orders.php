@@ -25,4 +25,5 @@ if ($result) {
     } else {
     echo "ID e order nuk është dhënë.";
     }
-    ?>  
+
+?>  

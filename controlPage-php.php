@@ -45,6 +45,8 @@ if (isset($_POST['user']) && isset($_POST['pass1'])) {
 		}
 	}
 	
-}else{
+}
+
+else{
 	header("Location: login.php");
 }

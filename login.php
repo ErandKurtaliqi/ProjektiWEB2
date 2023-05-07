@@ -61,6 +61,7 @@
             </div>
          </div>
       </div>
+      
       <script>
          const loginText = document.querySelector(".title-text .login");
          const loginForm = document.querySelector("form.login");

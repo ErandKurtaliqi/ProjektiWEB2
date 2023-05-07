@@ -10,6 +10,7 @@
     <link rel = "stylesheet" href = "style.css">
 </head>
 <body>
+    
     <!-- header section starts -->
     <section class="header">
 

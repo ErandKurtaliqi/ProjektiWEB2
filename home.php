@@ -195,7 +195,6 @@
             </div>
         </div>
         </div>
-
     </div>
 
     <div class="load-more"><a href="pageage.php" class="btn">Load more</a></div>

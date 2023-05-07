@@ -68,7 +68,8 @@ if (isset($_POST['names']) && isset($_POST['email'])
 	if(empty($arrivals)){
         header("Location: book_form.php?error=Arrivals is required&$user_data4");
 	    exit();
-	}else if($arrivals < date("Y-m-d")){
+	}
+	else if($arrivals < date("Y-m-d")){
 		header("Location: book_form.php?error=You cannot reserve the date that has passed&$user_data4");
 	    exit();
 	}

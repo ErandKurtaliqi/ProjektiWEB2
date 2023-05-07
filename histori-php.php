@@ -93,7 +93,6 @@ if (mysqli_num_rows($result) > 0) {
     echo "No results found.";
 }
 
-
 mysqli_close($conn);
 
 ?>

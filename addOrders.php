@@ -268,6 +268,7 @@ echo "</table>";
 } else {
 echo "No results found.";
 }
+
 ?>
 </body>
 </html>

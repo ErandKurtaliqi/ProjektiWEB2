@@ -1,7 +1,9 @@
 <?php
 
 $sname= "localhost";
+
 $unmae= "root";
+
 $password = "";
 
 $db_name = "travel";

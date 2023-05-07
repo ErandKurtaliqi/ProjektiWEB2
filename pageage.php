@@ -292,26 +292,9 @@
     <div class="load-more"><span class="btn">load more</span></div>
 
 </section>
-
-
-
 <!-- package section ends -->
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- footer section start -->
+<!-- footer section start -->
     <section class="footer" style = "background:url(images/Footer-Background-Image.png) no-repeat">
         <div class = "box-container">
             <div class = "box">

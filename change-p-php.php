@@ -3,7 +3,7 @@ session_start();
 
 if (isset($_SESSION['id_user_reg']) && isset($_SESSION['username_user_reg'])) {
 
-    include "book-db.php";
+include "book-db.php";
 
 if (isset($_POST['op']) && isset($_POST['np'])
     && isset($_POST['c_np'])) {

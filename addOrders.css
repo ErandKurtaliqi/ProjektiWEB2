@@ -70,6 +70,7 @@ html,body{
   form .field input:focus::placeholder{
     color: #b3b3b3;
   }
+  
   .form-inner form .pass-link{
     margin-top: 5px;
   }

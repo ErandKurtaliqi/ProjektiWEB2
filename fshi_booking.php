@@ -1,7 +1,7 @@
 <?php
 if (isset($_POST['id_booking'])) {
   $id_booking = $_POST['id_booking'];
-  
+
   include "book-db.php";
 
 $sql = "DELETE FROM booking WHERE id_booking = ?";
@@ -25,4 +25,5 @@ if ($result) {
     } else {
     echo "ID e booking nuk është dhënë.";
     }
-    ?>  
+
+?>  

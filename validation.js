@@ -8,30 +8,6 @@ validation
 ]);
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // const forma = document.getElementById('forma');
 // const names = document.getElementById('name');
 // const email = document.getElementById('email');
@@ -146,21 +122,6 @@ validation
 //         setSuccess(leaving);
 //     }
 // }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // const booking = document.querySelector('booking'),
 // names = document.querySelector('.name'),

@@ -154,7 +154,6 @@
 
             </div>
          </div>
-
          <div class = "credit">Created by <span>max travel </span> | all rights reserved! |</div>
     </section>
 
