@@ -3,29 +3,50 @@
 <head>
 
 <script>
-function deleteRow(id_booking) {
-    if (confirm("A jeni i sigurt që dëshironi të fshini këtë rresht?")) {
-        fetch("DeleteRoww.php", {
-            method: "POST",
-            body: JSON.stringify({id_booking: id_booking}),
-            headers: {
-                "Content-Type": "application/json"
-            }
-        })
-        .then(response => {
-            if (response.ok) {
-                location.reload();
-            } else {
-                throw new Error("Diçka shkoi keq gjatë fshirjes së rreshtit.");
-            }
-        })
-        .catch(error => {
-            console.error("Gabim:", error);
-        });
-    }
+function fshiRresht(id_booking) {
+  fetch("fshi_booking.php", {
+    method: "POST",
+    body: new URLSearchParams({ id_booking }),
+  })
+    .then((response) => response.text())
+    .then((text) => {
+      console.log(text);
+      if (text.includes("sukses")) {
+        const rreshti = document.getElementById("rreshti-" + id_booking);
+        rreshti.remove();
+      } else {
+        alert("Ndodhi një gabim gjatë fshirjes së rreshtit.");
+      }
+    })
+    .catch((error) => {
+      console.error("Error:", error);
+      alert("Ndodhi një gabim gjatë fshirjes së rreshtit.");
+    });
+}
+
+function fshiRresht2(id_orders) {
+  fetch("fshi_orders.php", {
+    method: "POST",
+    body: new URLSearchParams({ id_orders }),
+  })
+    .then((response) => response.text())
+    .then((text) => {
+      console.log(text);
+      if (text.includes("sukses")) {
+        const rreshti = document.getElementById("rreshti-" + id_orders);
+        rreshti.remove();
+      } else {
+        alert("Ndodhi një gabim gjatë fshirjes së rreshtit.");
+      }
+    })
+    .catch((error) => {
+      console.error("Error:", error);
+      alert("Ndodhi një gabim gjatë fshirjes së rreshtit.");
+    });
 }
 
 </script>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -36,7 +57,7 @@ function deleteRow(id_booking) {
 <body>
 <div class="form-container">
 <div class="form-inner">
-<form action="addOrders-php.php" method="post" class="login"><br><br>
+<form action="addOrders-php.php" method="post" class="login" id="orders"><br><br>
 <div class="field">
     <input type="number" placeholder="Shto id e orders" id="id_orders" name="id_orders"><br><br>
 </div>
@@ -106,7 +127,7 @@ echo "<table border = 1 id='tabela1' style='display: none;' class='table_respons
 <th>Arrivals</th>
 <th>Leaving</th>";
 while($row = mysqli_fetch_assoc($result)) {
-echo "<tr><td>".$row["id_booking"]."</td>
+echo "<tr id='rreshti-".$row["id_booking"]."'><td>".$row["id_booking"]."</td>
 <td>".$row["names"]."</td>
 <td>".$row["email"]."</td>
 <td>".$row["phone"]."</td>
@@ -115,11 +136,7 @@ echo "<tr><td>".$row["id_booking"]."</td>
 <td>".$row["guests"]."</td>
 <td>".$row["arrivals"]."</td>
 <td>".$row["leaving"]."</td>
-<td>
-<span id='6' class='action_btn'>
-<a href='#' class='delete_btn' onclick='deleteRow(".$row["id_booking"].")'>Delete</a>
-</span>
-</td>";
+<td><button class='fshi-btn' onclick='fshiRresht(".$row["id_booking"].")'>Delete</button></td>";
 }
 echo "</table>";
 } else {
@@ -139,21 +156,18 @@ echo "<table border = 1 id='tabela2' style='display: none;' class='table_respons
 <th>Id_countries</th>
 <th>Id_hotels</th>
 <th>Id_company_fly</th>
-<th>User_name</th>";
+<th>User_name</th>
+<th>Total_Price</th>";
 while($row = mysqli_fetch_assoc($result)) {
-echo "<tr><td>" . $row["id_orders"] . "</td>
+echo "<tr id='rreshti-".$row["id_orders"]."'><td>" . $row["id_orders"] . "</td>
 <td>".$row["id_booking"]."</td>
 <td>".$row["id_user_reg"]."</td>
 <td>".$row["id_countries"]."</td>
 <td>".$row["id_hotels"]."</td>
 <td>".$row["id_company_fly"]."</td>
 <td>".$row["user_name"]."</td>
-<td>
-<span id='6' class='action_btn'>
-<a href='#'>Edit</a>
-<button type='button' onclick='myFunction6()'>Remove</a>
-</span>
-</td>";
+<td>".$row["total_price"]."</td>
+<td><button class='fshi-btn' onclick='fshiRresht2(".$row["id_orders"].")'>Delete</button></td>";
 }
 echo "</table>";
 } else {
@@ -173,17 +187,12 @@ echo "<table border = 1 id='tabela3' style='display: none;' class='table_respons
 <th>Price_Hotel</th>
 <th>Code_City</th>";
 while($row = mysqli_fetch_assoc($result)) {
-echo "<tr><td>" . $row["id_hotels"] . "</td>
+echo "<tr id='rreshti-".$row["id_hotels"]."'><td>" . $row["id_hotels"] . "</td>
 <td>".$row["name_hotels"]."</td>
 <td>".$row["offer"]."</td>
 <td>".$row["price_hotel"]."</td>
 <td>".$row["codCity"]."</td>
-<td>
-<span id='6' class='action_btn'>
-<a href='#'>Edit</a>
-<button type='button' onclick='myFunction6()'>Remove</a>
-</span>
-</td>";
+<td><button class='fshi-btn' onclick='fshiRresht(".$row["id_hotels"].")'>Delete</button></td>";
 }
 echo "</table>";
 } else {
@@ -204,17 +213,12 @@ echo "<table border = 1 id='tabela4' style='display: none;' class='table_respons
 <th>Id_Company_Fly</th>
 <th>Id_Hotels</th>";
 while($row = mysqli_fetch_assoc($result)) {
-echo "<tr><td>" . $row["id_countries"] . "</td>
+echo "<tr id='rreshti-".$row["id_countries"]."'><td>" . $row["id_countries"] . "</td>
 <td>".$row["name_countries"]."</td>
 <td>".$row["price_countries"]."</td>
 <td>".$row["id_company_fly"]."</td>
 <td>".$row["id_hotels"]."</td>
-<td>
-<span id='6' class='action_btn'>
-<a href='#'>Edit</a>
-<button type='button' onclick='myFunction6()'>Remove</a>
-</span>
-</td>";
+<td><button class='fshi-btn' onclick='fshiRresht(".$row["id_countries"].")'>Delete</button></td>";
 }
 echo "</table>";
 } else {
@@ -233,16 +237,11 @@ echo "<table border = 1 id='tabela5' style='display: none;' class='table_respons
 <th>Username</th>
 <th>Password</th>";
 while($row = mysqli_fetch_assoc($result)) {
-echo "<tr><td>" . $row["id_user_reg"] . "</td>
+echo "<tr id='rreshti-".$row["id_user_reg"]."'><td>" . $row["id_user_reg"] . "</td>
 <td>".$row["name_user_reg"]."</td>
 <td>".$row["username_user_reg"]."</td>
 <td>".$row["password"]."</td>
-<td>
-<span id='6' class='action_btn'>
-<a href='#'>Edit</a>
-<button type='button' onclick='myFunction6()'>Remove</a>
-</span>
-</td>";
+<td><button class='fshi-btn' onclick='fshiRresht(".$row["id_user_reg"].")'>Delete</button></td>";
 }
 echo "</table>";
 } else {
@@ -262,17 +261,12 @@ echo "<table border = 1 id='tabela6' style='display: none;' class='table_respons
 <th>Contract</th>
 <th>Price_Fly</th>";
 while($row = mysqli_fetch_assoc($result)) {
-echo "<tr><td>" . $row["id_company_fly"] . "</td>
+echo "<tr id='rreshti-".$row["id_company_fly"]."'><td>" . $row["id_company_fly"] . "</td>
 <td>".$row["name_company_fly"]."</td>
 <td>".$row["destination"]."</td>
 <td>".$row["contract"]."</td>
 <td>".$row["price_fly"]."</td>
-<td>
-<span id='6' class='action_btn'>
-<a href='#'>Edit</a>
-<button type='button' onclick='myFunction6()'>Remove</a>
-</span>
-</td>";
+<td><button class='fshi-btn' onclick='fshiRresht(".$row["id_company_fly"].")'>Delete</button></td>";
 }
 echo "</table>";
 } else {
