@@ -81,14 +81,6 @@
                 <input type="text" name="card" id="card" required>
             </div>
             <div class="form-control">
-                <label for="pay">Sum for pay</label>
-                <input type="number" name="pay" id="pay" readonly required>
-            </div>
-            <!-- <div class="form-control">
-                <label for="expiry">Expiry Date</label>
-                <input type="month" name="expiry" id="expiry" required>
-            </div> -->
-            <div class="form-control">
                 <input type="submit" name="submit" value="Submit">
             </div>
             <div class="form-image">
