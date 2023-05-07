@@ -1,3 +1,4 @@
+
 <?php
 $conn = mysqli_connect("localhost", "root", "", "llogaritja_kredive");
 
@@ -22,7 +23,12 @@ if(isset($_POST['submit'])) {
   $row = $result->fetch_assoc();
 
   if (!$row) {
-    die("Nuk mund të gjeni çmimin e kërkuar.");
+    die("Unable to find the requested price.");
+  }
+
+  if ($row['total_price'] === NULL) {
+    echo "<script>alert('No user was found with this name.');</script>";
+    exit();
   }
 
   $total_price = $row['total_price'];
@@ -52,18 +58,34 @@ if(isset($_POST['submit'])) {
 
     echo "<h2>Transaction Successful</h2>";
     echo "<table>";
-    echo "<tr><th>Transaction Details</th><td></td></tr>";
+    echo "<tr style = 'margin-left: 250px;'><th>Transaction Details</th><td></td></tr>";
     echo "<tr><th>Numer Transaksioni</th><td>".$card."</td></tr>";
     echo "<tr><th>Llogaria Prejardhese</th><td>".$card."</td></tr>";
     echo "<tr><th>Llogaria Arritjes</th><td>150400100828394</td></tr>";
     echo "<tr><th>Shuma e Transferuar</th><td>".$total_price." ".$row['monedha']."</td></tr>";
     echo "<tr><th>The account balance after the transaction</th><td>".$row['balanca']." ".$row['monedha']."</td></tr>";
+    echo "<button onclick='downloadHTML()' style = 'margin-top:40px;'>Download</button>";
     echo "</table>";
     } else {
     echo "The transaction failed. Please try again.";
     }
+
     
     $stmt->close();
     $conn->close();
     }
     ?>
+    <script>
+  function downloadHTML() {
+  const element = document.createElement('a');
+  const mimeType = 'text/html';
+  const fileName = 'Transaction';
+
+  element.href = URL.createObjectURL(new Blob([document.documentElement.outerHTML], {type: mimeType}));
+  element.download = fileName;
+
+  document.body.appendChild(element);
+  element.click();
+  document.body.removeChild(element);
+}
+</script>
