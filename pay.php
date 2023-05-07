@@ -70,7 +70,7 @@
             </div>
             <div class="form-control">
                 <label for="id_person">Personal identification</label>
-                <input type="number" name="id_person" id="id_person" min="12" required>
+                <input type="number" name="id_person" id="id_person" required>
             </div>
             <div class="form-control">
                 <label for="phone">Phone Number</label>
