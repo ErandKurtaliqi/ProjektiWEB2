@@ -23,7 +23,7 @@ if(isset($_POST['submit'])) {
   $card = mysqli_real_escape_string($conn, $_POST['card']);
 
   // Kërkoni total_price të gjithë user_name të njëjta nga tabela orders duke përdorur një parameter
-  $stmt = $conn->prepare("SELECT SUM(total_price) as total_price FROM orders WHERE user_name = ?");
+  $stmt = $conn->prepare("SELECT SUM(price_total) as total_price FROM orders WHERE user_name = ?");
   $stmt->bind_param("s", $email);
   $stmt->execute();
   $result = $stmt->get_result();
