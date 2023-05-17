@@ -44,7 +44,7 @@
                     </div>
                 </div>
 
-                <div class="swiper-slide" style="background:url(images/sea.jpg) no-repeat;">
+                <div class="swiper-slide" style="background:url(images/travel.png) no-repeat;">
                     <div class="content">
                         <span>explore, discover, travel</span>
                         <h3>Discover the new places</h3>
