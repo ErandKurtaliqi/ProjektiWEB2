@@ -4,7 +4,9 @@
 	<title>SIGN UP</title>
 	<link rel="stylesheet" type="text/css" href="signup.css">
 </head>
-<body st>
+<body style="background-image: url(images/airplane.jpg); background-repeat: no-repeat; background-position: center; background-size: cover;">
+
+
      <form action="signup-check.php" method="post">
      	<h2>SIGN UP</h2>
      	<?php if (isset($_GET['error'])) { ?>
