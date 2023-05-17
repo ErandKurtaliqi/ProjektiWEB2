@@ -9,25 +9,33 @@
     <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <link rel="stylesheet" href="bokk.css">
     <link rel = "stylesheet" href = "style.css">
-    <script src="validation.js" defer></script>
     <script>
-        function showSuggestion(str){
-            if(str.length == 0){
-                document.getElementById('output').innerHTML = '';
-            }else{
-                //  AJAX REQ
+        function calculateReturnDate() {
+  var startDate = document.getElementById('start-date').value;
+  var returnDate = new Date(startDate);
+  returnDate.setDate(returnDate.getDate() + 5);
 
-                var xmlhttp = new XMLHttpRequest();
-                xmlhttp.onreadystatechange = function(){
-                    if(this.readyState == 4 && this.status == 200){
-                        document.getElementById('output').innerHTML = this.responseText;
-                    }
-                }
-                xmlhttp.open("GET", "Countries.php?q="+str, true);
-                xmlhttp.send();
-            }
-        }
-    </script>
+  var formattedReturnDate = formatDate(returnDate);
+  document.getElementById('return-date').textContent = formattedReturnDate;
+}
+
+function formatDate(date) {
+  var day = date.getDate();
+  var month = date.getMonth() + 1;
+  var year = date.getFullYear();
+
+  if (day < 10) {
+    day = '0' + day;
+  }
+
+  if (month < 10) {
+    month = '0' + month;
+  }
+
+  return day + '-' + month + '-' + year;
+}
+        </script>
+    
 </head>
 <body>
     <!-- header section starts -->
@@ -214,29 +222,24 @@
         <?php if (isset($_GET['arrivals'])) { ?>
      	<input type="date" 
                  name="arrivals" 
-                 id="arrivals"
+                 id="start-date" 
+                 onchange="calculateReturnDate()"
                  placeholder="Arrivals"
+                 pattern="\d{4}-\d{2}-\d{2}"
                  value="<?php echo $_GET['arrivals']; ?>">
         <?php }else{ ?>
                <input type="date" 
                       name="arrivals"
-                      id="arrivals" 
-                      placeholder="Arrivals">
+                      id="start-date"  
+                      onchange="calculateReturnDate()"
+                      placeholder="Arrivals"
+                      pattern="\d{4}-\d{2}-\d{2}">
         <?php }?>
 
-        <!-- <label>Leaving</label> -->
-        <?php if (isset($_GET['leaving'])) { ?>
-     	<input type="date" 
-                 name="leaving" 
-                 id="leaving"
-                 placeholder="Leaving"
-                 value="<?php echo $_GET['leaving']; ?>">
-        <?php }else{ ?>
-               <input type="date" 
-                      name="leaving"
-                      id="leaving" 
-                      placeholder="Leaving">
-        <?php }?>
+        <p>Data e kthimit</p>
+        <span id="return-date"></span>
+        <input type="hidden" name="return-date" id="hidden-return-date" pattern="\d{4}-\d{2}-\d{2}">
+                
           </span>
         
         <button type="submit">BOOK</button>
