@@ -38,7 +38,7 @@
             <div class="swiper-wrapper">
                 <div class="swiper-slide" style="background:url(images/sea.jpg) no-repeat;">
                     <div class="content">
-                        <span>explore, discover, travel</span>
+                        <span>explore, discover, travel</span>   
                         <h3>travel around the world</h3>
                         <a href="pageage.php" class="btn">Discover more</a>
                     </div>
