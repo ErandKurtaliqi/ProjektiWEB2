@@ -4,7 +4,7 @@
 	<title>SIGN UP</title>
 	<link rel="stylesheet" type="text/css" href="signup.css">
 </head>
-<body style="background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(images/klm.jpg);">
+<body style="background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(images/klm.jpg); no-repeat">
 
      <form action="signup-check.php" method="post">
      	<h2>SIGN UP</h2>
