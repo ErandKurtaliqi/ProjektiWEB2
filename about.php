@@ -262,5 +262,6 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <!-- custom js file link -->
 <script src ="script.js"></script>
+
 </body>
 </html>

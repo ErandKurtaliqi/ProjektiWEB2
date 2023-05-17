@@ -3,7 +3,8 @@ session_start();
 
 if (isset($_SESSION['id_user_reg']) && isset($_SESSION['username_user_reg'])) {
 
- ?>
+?>
+
 <!DOCTYPE html>
 <html>
 <head>

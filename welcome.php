@@ -21,8 +21,10 @@ if (isset($_SESSION['id_user_reg']) && isset($_SESSION['username_user_reg'])) {
 </html>
 
 <?php 
+
 }else{
      header("Location: login.php");
      exit();
 }
+
  ?>

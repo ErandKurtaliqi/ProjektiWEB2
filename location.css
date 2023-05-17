@@ -27,14 +27,12 @@ section{
     }
 }
 
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins',sans-serif;
 }
-
 
 .container{
     width: 100%;
@@ -43,12 +41,13 @@ section{
     align-items: center;
     justify-content:center;
     flex-direction: column;
-    
 }
+
 h1{
     color: #8e44ad;
     margin-bottom: 60px;
 }
+
 iframe{
     width: 80%;
     height: 500px;

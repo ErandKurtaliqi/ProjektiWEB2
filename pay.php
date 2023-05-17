@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="pay.css">
 </head>
 <body>
+    
 <!-- 9959656596580987099 -->
     <div class="container">
         <h2>Online Payment Form</h2>
@@ -70,7 +71,7 @@
             </div>
             <div class="form-control">
                 <label for="id_person">Personal identification</label>
-                <input type="number" name="id_person" id="id_person" min="12" required>
+                <input type="number" name="id_person" id="id_person" required>
             </div>
             <div class="form-control">
                 <label for="phone">Phone Number</label>
@@ -80,14 +81,6 @@
                 <label for="card">Credit/Debit Card Number</label>
                 <input type="text" name="card" id="card" required>
             </div>
-            <div class="form-control">
-                <label for="pay">Sum for pay</label>
-                <input type="number" name="pay" id="pay" readonly required>
-            </div>
-            <!-- <div class="form-control">
-                <label for="expiry">Expiry Date</label>
-                <input type="month" name="expiry" id="expiry" required>
-            </div> -->
             <div class="form-control">
                 <input type="submit" name="submit" value="Submit">
             </div>

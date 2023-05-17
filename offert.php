@@ -43,6 +43,7 @@ body{
                 <!-- <button type="button">BOOK THIS</button> -->
                 <a href="book_form.php" class="btn">BOOK THIS</a>
             </div>
+            
             <div class="columan-BOX">
                 <div class="cars car1">
                 <a href = "https://soparis.com/en/" class = "logo"><b>SO Paris Hotel<b></a>

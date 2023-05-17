@@ -247,9 +247,7 @@
 </section> 
 
 
-
 <!--booking section ends-->
-
 
 
     <!-- footer section start -->

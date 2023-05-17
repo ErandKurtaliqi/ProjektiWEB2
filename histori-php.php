@@ -1,11 +1,6 @@
 <?php
 
-
-$conn = mysqli_connect("localhost", "root", "", "travel");
-
-if (!$conn) {
-    die("Connection failed: " . mysqli_connect_error());
-}
+include "book-db.php";
 
 if (isset($_POST['username']) && isset($_POST['password'])) {
 
@@ -97,7 +92,6 @@ if (mysqli_num_rows($result) > 0) {
 } else {
     echo "No results found.";
 }
-
 
 mysqli_close($conn);
 

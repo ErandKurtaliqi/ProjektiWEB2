@@ -50,4 +50,5 @@ var swiper = new Swiper(".swiper-mySwiper", {
     if(currentItem >= boxes.length){
         loadMoreBtn.style.display = 'none';
     }
+    
   };
