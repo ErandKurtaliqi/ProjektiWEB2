@@ -4,11 +4,8 @@
 	<title>SIGN UP</title>
 	<link rel="stylesheet" type="text/css" href="signup.css">
 </head>
-<<<<<<< HEAD
-<body style="background-image: url(images/signup.jpg);">
-=======
-<body st>
->>>>>>> d09ad141ea1e67f320207ef928348a596ceea307
+
+<body style="background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(images/signup.jpg);">
      <form action="signup-check.php" method="post">
      	<h2>SIGN UP</h2>
      	<?php if (isset($_GET['error'])) { ?>
