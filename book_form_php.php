@@ -5,7 +5,7 @@ include "book-db.php";
 if (isset($_POST['names']) && isset($_POST['email'])
     && isset($_POST['phone']) && isset($_POST['address']) 
 	&& isset($_POST['location']) && isset($_POST['guests'])
-	&& isset($_POST['arrivals']) && isset($_POST['leaving'])) {
+	&& isset($_POST['arrivals']) && isset($_POST['return-date'])) {
 
 	function validate($data){
        $data = trim($data);
@@ -21,9 +21,10 @@ if (isset($_POST['names']) && isset($_POST['email'])
 	$location = validate($_POST['location']);
 	$guests = validate($_POST['guests']);
 	$arrivals = validate($_POST['arrivals']);
-	$leaving = validate($_POST['leaving']);
+	$leaving = date('Y-m-d', strtotime($_POST['arrivals']));
 
 	$user_data .= 'names='. $names;
+	
 	
 	if (empty($names)) {
 		header("Location: book_form.php?error=Name is required&$user_data");
@@ -71,13 +72,6 @@ if (isset($_POST['names']) && isset($_POST['email'])
 	}
 	else if($arrivals < date("Y-m-d")){
 		header("Location: book_form.php?error=You cannot reserve the date that has passed&$user_data4");
-	    exit();
-	}
-
-	$user_data5 .= 'leaving='. $leaving;
-
-	if(empty($leaving)){
-        header("Location: book_form.php?error=Leaving is required&$user_data5");
 	    exit();
 	}
 	
