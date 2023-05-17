@@ -36,7 +36,7 @@
     <section class="home">
         <div class="swiper home-slider">
             <div class="swiper-wrapper">
-                <div class="swiper-slide" style="background:url(images/womense.jpg) no-repeat;">
+                <div class="swiper-slide" style="background:url(images/sea.jpg) no-repeat;">
                     <div class="content">
                         <span>explore, discover, travel</span>
                         <h3>travel around the world</h3>
