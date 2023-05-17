@@ -4,7 +4,11 @@
 	<title>SIGN UP</title>
 	<link rel="stylesheet" type="text/css" href="signup.css">
 </head>
+<<<<<<< HEAD
 <body style="background-image: url(images/signup.jpg);">
+=======
+<body st>
+>>>>>>> d09ad141ea1e67f320207ef928348a596ceea307
      <form action="signup-check.php" method="post">
      	<h2>SIGN UP</h2>
      	<?php if (isset($_GET['error'])) { ?>
