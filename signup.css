@@ -28,7 +28,7 @@ section{
 }
 
 body {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(images/signup.jpg) no-repeat;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(images/singapore-singapore.jpg) no-repeat;
 	display: flex;
 	justify-content: center;
 	align-items: center;
