@@ -28,13 +28,12 @@ section{
 }
 
 body {
-
-		background-image: url(images/signup.jpg);
-		background-repeat: no-repeat;
-		background-position: center;
-		background-size: cover;
-	  
-	  
+	background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(images/signup.jpg) no-repeat;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	flex-direction: column;
 }
 
 *{
