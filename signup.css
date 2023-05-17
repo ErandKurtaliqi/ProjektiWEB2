@@ -28,7 +28,7 @@ section{
 }
 
 body {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(images/loginphoto.jpg);
+	background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(images/signup.jpg);
 	display: flex;
 	justify-content: center;
 	align-items: center;
