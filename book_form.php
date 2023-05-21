@@ -80,7 +80,7 @@ function formatDate(date) {
 
     <!-- <h1 class="heading-title">book your trip!</h1> -->
     <form action="book_form_php.php" method="post" class="book-forma" autocomplete="on">
-     	<h2 style="color: #fff;">You can book here!</h2>
+     	<h2>You can book here!</h2>
         <style>
             h2 {
                 color: black;
