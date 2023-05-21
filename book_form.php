@@ -17,8 +17,10 @@
 
   var formattedReturnDate = formatDate(returnDate);
   document.getElementById('return-date').textContent = formattedReturnDate;
-}
 
+  // Update the hidden input value
+  document.getElementById('hidden-return-date').value = formattedReturnDate;
+}
 function formatDate(date) {
   var day = date.getDate();
   var month = date.getMonth() + 1;
@@ -236,8 +238,8 @@ function formatDate(date) {
                       pattern="\d{4}-\d{2}-\d{2}">
         <?php }?>
 
-        <p style="color: #fff; font-size: 2rem">Leaving</p>
-        <span id="return-date" style="color: #fff; font-size: 2rem"></span>
+        <p style="font-size: 2rem">Leaving</p>
+        <span id="return-date" style="font-size: 2rem"></span>
         <input type="hidden" name="return-date" id="hidden-return-date" pattern="\d{4}-\d{2}-\d{2}">
                 
           </span>
