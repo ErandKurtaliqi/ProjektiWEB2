@@ -1,13 +1,8 @@
 # ProjektiWEB2
-# Titulli i projektit: Aplikacioni për shitjen e biletave me oferta online për travel
-
-Ky projekt është një aplikacion i zhvilluar për të siguruar shitjen e biletave me oferta online për udhëtarët. 
-Aplikacioni ofron një platformë të lehtë për shfrytëzuesit për të kërkuar, shfletuar dhe blerë biletat e tyre të udhëtimit nëpërmjet një faqeje të internetit.
-
+# Titulli i projektit: "MAX TRAVEL: Aplikacioni për shitjen e biletave me oferta online për travel"
 ## Përshkrimi i Projektit
 
-Ky projekt është zhvilluar me qëllim të lehtësimit të procesit të blerjes së biletave të udhëtimit për udhëtarët. 
-Përmes këtij aplikacioni, përdoruesit mund të shfrytëzojnë ofertat online për të gjetur dhe blerë biletat e tyre të udhëtimit me lehtësi.
+"MAX TRAVEL" është një zgjidhje inovative e programuar për të lehtësuar procesin e blerjes së biletave për udhëtimin nëpërmjet ofertave online. Kjo platformë mundëson shfrytëzuesit të kërkojnë, shfletojnë dhe blerë biletat e tyre të udhëtimit në mënyrë të thjeshtë dhe efektive përmes një faqeje të internetit.
 
 Aplikacioni është zhvilluar duke përdorur një kombinim të gjuhëve të programimit si HTML, CSS, JavaScript dhe PHP. 
 HTML dhe CSS janë përdorur për të krijuar strukturën dhe stilizimin e faqes së internetit, ndërsa JavaScript është përdorur për të ofruar interaktivitet në anën e klientit. 
@@ -15,9 +10,9 @@ PHP është përdorur për të zhvilluar pjesën e serverit dhe për të lidhur 
 
 
 
-## Përdorimi
+## Përdorimi dhe Funksionalitetet:
 
-Aplikacioni ka një ndërfaqe të thjeshtë dhe intuitivë për shfrytëzuesit. Këtu janë disa nga funksionalitetet kryesore që ofron:
+Aplikacioni "MAX TRAVEL" ka një ndërfaqe të thjeshtë dhe intuitivë për shfrytëzuesit. Këtu janë disa nga funksionalitetet kryesore që ofron:
 
 - Kërkimi i biletave sipas destinacionit, datës, ose çmimeve
 - Shfletimi i ofertave të disponueshme për biletat e udhëtimit
