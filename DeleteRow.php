@@ -10,6 +10,7 @@ $conn = new mysqli("localhost", "root", "", "travel");
 
 // Kontrollo lidhjen
 if ($conn->connect_error) {
+    // Njofto klientin për gabimin në lidhjen me bazën e të dhënave
     http_response_code(500);
     die(json_encode(array("message" => "Lidhja dështoi: " . $conn->connect_error)));
 }
@@ -21,9 +22,11 @@ $stmt->bind_param("i", $id_booking);
 $result = $stmt->execute();
 
 if ($result) {
+    // Njofto klientin se rreshti është fshirë me sukses
     http_response_code(200);
     echo json_encode(array("message" => "Rreshti u fshi me sukses."));
 } else {
+     // Njofto klientin se ka ndodhur një gabim gjatë fshirjes së rreshtit
     http_response_code(500);
     echo json_encode(array("message" => "Diçka shkoi keq gjatë fshirjes së rreshtit."));
 }
