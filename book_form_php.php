@@ -21,7 +21,10 @@ if (isset($_POST['names']) && isset($_POST['email'])
 	$location = validate($_POST['location']);
 	$guests = validate($_POST['guests']);
 	$arrivals = validate($_POST['arrivals']);
-	$leaving = date('Y-m-d', strtotime($_POST['arrivals']));
+	$returnDate = $_POST['return-date'];
+
+	$returnDateArray = explode('-', $returnDate);
+    $leaving = $returnDateArray[2].'-'.$returnDateArray[1].'-'.$returnDateArray[0];
 
 	$user_data .= 'names='. $names;
 	

@@ -17,8 +17,10 @@
 
   var formattedReturnDate = formatDate(returnDate);
   document.getElementById('return-date').textContent = formattedReturnDate;
-}
 
+  // Update the hidden input value
+  document.getElementById('hidden-return-date').value = formattedReturnDate;
+}
 function formatDate(date) {
   var day = date.getDate();
   var month = date.getMonth() + 1;
@@ -60,7 +62,7 @@ function formatDate(date) {
     <!-- header section ends -->
 
 <div class = "heading" style = "background:url(images/snow.jpg)">
-    <h1 style="color: black;">TRAVEL WITH US!</h1>
+    <h1 style="color: #fff;">TRAVEL WITH US!</h1>
     <style>
         h1 {
             opacity: 0.8;   
@@ -236,14 +238,14 @@ function formatDate(date) {
                       pattern="\d{4}-\d{2}-\d{2}">
         <?php }?>
 
-        <p>Data e kthimit</p>
-        <span id="return-date"></span>
+        <p style="font-size: 2rem">Leaving</p>
+        <span id="return-date" style="font-size: 2rem"></span>
         <input type="hidden" name="return-date" id="hidden-return-date" pattern="\d{4}-\d{2}-\d{2}">
                 
           </span>
         
         <button type="submit">BOOK</button>
-        <a href="info.html" class="btn" style="margin-left: 355px;">Pay</a>
+        <a href="info.html" class="btn" style="margin-left: 355px; background: purple">Pay</a>
         <button onclick="window.print()" style="margin-left: 355px;">Print</button>
 
     </form>

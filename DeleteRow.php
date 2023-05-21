@@ -33,5 +33,4 @@ if ($result) {
 
 $stmt->close();
 $conn->close();
-
 ?>
