@@ -181,10 +181,10 @@ Our Sales Team</p>
 
             <div class = "box">
                 <h3>Extra Links</h3>
-            <a href = "#"><i class = "fas fa-angle-right"></i>Ask Questions</a>
+            <a href = "contact.php"><i class = "fas fa-angle-right"></i>Ask Questions</a>
             <a href = "about.php"><i class = "fas fa-angle-right"></i>About Us</a>
-            <a href = "#"><i class = "fas fa-angle-right"></i>Privacy Policy</a>
-            <a href = "#"><i class = "fas fa-angle-right"></i>Terms of Use</a>
+            <a href = "private.php"><i class = "fas fa-angle-right"></i>Privacy Policy</a>
+            <a href = "public.php"><i class = "fas fa-angle-right"></i>Terms and Conditions</a>
             <a href = "pay.php"><i class = "fas fa-angle-right"></i>Link For Pay</a>
             </div> 
 
