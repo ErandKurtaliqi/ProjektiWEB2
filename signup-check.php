@@ -29,8 +29,16 @@ if (isset($_POST['uname']) && isset($_POST['password'])
 	}else if(empty($pass)){
         header("Location: signup.php?error=Password is required&$user_data");
 	    exit();
-	}
-	else if(empty($re_pass)){
+	}else if (strlen($pass) < 8) {
+        header("Location: signup.php?error=The password isn't strong enough.&$user_data");
+		exit();
+    } elseif (!preg_match('/[A-Z]/', $pass)) {
+        header("Location: signup.php?error=The password isn't strong enough.&$user_data");
+		exit();
+    } elseif (!preg_match('/[.*&^%$#@!]/', $pass)) {
+        header("Location: signup.php?error=The password isn't strong enough.&$user_data");
+		exit();
+    }else if(empty($re_pass)){
         header("Location: signup.php?error=Re Password is required&$user_data");
 	    exit();
 	}

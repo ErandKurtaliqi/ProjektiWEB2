@@ -11,7 +11,7 @@ if (isset($_SESSION['id_user_reg']) && isset($_SESSION['username_user_reg'])) {
 	<link rel="stylesheet" type="text/css" href="signup.css">
 </head>
 <body style="background-image:url(image/backgroundSIGNUP.avif)">
-     <h1>Hello, <?php echo $_SESSION['name_user_reg']; ?></h1>
+     <h1>Hello, <?php echo  $_SESSION['name_user_reg']; ?></h1>
      <nav class="home-nav">
      <a href="change-password-u.php">Change Password</a>
      <a href="logout.php">Logout</a>
