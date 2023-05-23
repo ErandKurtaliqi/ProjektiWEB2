@@ -25,6 +25,15 @@ if (isset($_POST['op']) && isset($_POST['np'])
     }else if(empty($np)){
         header('Location: change-password-u.php?error=New Password is required');
     exit();
+    }else if (strlen($np) < 8) {
+        header("Location: change-password-u.php?error=The password isn't strong enough.");
+		exit();
+    } elseif (!preg_match('/[A-Z]/', $np)) {
+        header("Location: change-password-u.php?error=The password isn't strong enough.");
+		exit();
+    } elseif (!preg_match('/[.*&^%$#@!]/', $np)) {
+        header("Location: change-password-u.php?error=The password isn't strong enough.");
+		exit();
     }else if($np !== $c_np){
         header('Location: change-password-u.php?error=The confirmation password does not match');
     exit();

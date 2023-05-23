@@ -5,9 +5,6 @@
 	<link rel="stylesheet" type="text/css" href="signup.css">
 </head>
 
-<body style="background-image: url(images/klm.jpg); background-repeat: no-repeat; background-position: center; background-size: cover;">
-
-
 <body style="background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(images/signup.jpg);">
 
      <form action="signup-check.php" method="post">

@@ -9,6 +9,55 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <link rel = "stylesheet" href = "style.css">
+    <?php
+    // Check if the user has already made a choice
+    $cookieChoice = isset($_COOKIE['cookieChoice']) ? $_COOKIE['cookieChoice'] : null;
+    
+    // Process the user's choice
+    if (isset($_POST['cookieConsent'])) {
+        $cookieChoice = $_POST['cookieConsent'];
+        setcookie('cookieChoice', $cookieChoice, time() + 3600, '/');
+    }
+    
+    // Check if the user has accepted cookies
+    $cookiesAccepted = ($cookieChoice === 'accept');
+    
+    // HTML code for the cookie consent bar
+    $consentBar = '
+    <div id="cookieConsent" style="background-color: #f8f8f8; padding: 10px; position: fixed; bottom: 0; width: 100%; text-align: center; z-index: 9999; display: none;">
+        <p>This website uses cookies to enhance your experience. By using our website, you consent to the use of cookies.</p>
+        <form method="POST" style="display: inline-block;">
+            <input type="hidden" name="cookieConsent" value="accept">
+            <button type="submit" style="background-color: #4CAF50; color: white; border: none; padding: 5px 10px; cursor: pointer;">Accept</button>
+        </form>
+        <form method="POST" style="display: inline-block;">
+            <input type="hidden" name="cookieConsent" value="decline">
+            <button type="submit" style="background-color: #f44336; color: white; border: none; padding: 5px 10px; cursor: pointer;">Decline</button>
+        </form>
+    </div>';
+    
+    // Display the cookie consent bar if the user hasn't made a choice or if cookies are declined
+    if (!$cookiesAccepted) {
+        echo $consentBar;
+    }
+    ?>
+    
+    <script>
+    // Display the consent bar after 3 seconds
+    window.setTimeout(function() {
+        var consentBar = document.getElementById('cookieConsent');
+        consentBar.style.display = 'block';
+    }, 3000);
+    
+    // If the user declines, the consent bar will reappear after 3 seconds
+    if (<?php echo json_encode(!$cookiesAccepted); ?>) {
+        window.setTimeout(function() {
+            var consentBar = document.getElementById('cookieConsent');
+            consentBar.style.display = 'block';
+        }, 3000);
+    }
+    </script>
+    
 </head>
 <body>
     <!-- header section starts -->
