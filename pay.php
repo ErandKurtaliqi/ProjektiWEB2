@@ -9,7 +9,6 @@
 </head>
 <body>
     
-<!-- 9959656596580987099 -->
     <div class="container">
         <h2>Online Payment Form</h2>
         <form method="post" action="pay-php.php">
